@@ -35,7 +35,3 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/services/{id}', [ServicesController::class, 'show'])->where('id', '[0-9]+');
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
