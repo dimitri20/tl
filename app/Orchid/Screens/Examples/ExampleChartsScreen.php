@@ -18,6 +18,10 @@ class ExampleChartsScreen extends Screen
      */
     public $name = 'Charts';
 
+    public static function displayInNavigation(): bool
+    {
+        return false;
+    }
     /**
      * Query data.
      *

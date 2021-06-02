@@ -19,6 +19,11 @@ class ExampleTextEditorsScreen extends Screen
      */
     public $name = 'Form Text Editors';
 
+
+    public static function displayInNavigation(): bool
+    {
+        return false;
+    }
     /**
      * Display header description.
      *

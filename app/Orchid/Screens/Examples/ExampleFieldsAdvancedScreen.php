@@ -55,6 +55,11 @@ class ExampleFieldsAdvancedScreen extends Screen
         ];
     }
 
+    public static function displayInNavigation(): bool
+    {
+        return false;
+    }
+
     /**
      * Button commands.
      *

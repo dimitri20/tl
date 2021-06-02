@@ -14,7 +14,7 @@
                 <div class="row">
                     @for($j = 0; $j < 3; $j++)
                     <div class="col-lg-4 col-md-12 mb-4 service-container">
-                        <img src="/images/service.jpeg" alt="">
+                        <img src="{{ substr($services[3*$i+$j]->image_path, 1) }}" alt="">
                         <a href="/services/{{ $services[3*$i+$j]->id }}" class="service-a-tag text-decoration-none text-center"><p class="text-center">{{ $services[3*$i+$j]->title }}</p></a>
                     </div>
                     @endfor
@@ -25,9 +25,9 @@
                     @for($j = 0; $j < sizeof($services)%3; $j++)
                     <div class="col-lg-4 col-md-12 mb-4 service-container">
                         
-                        <img src="/images/service.jpeg" alt="">
-                        <a href="/services/{{ $services[3*$i+$j]->id }}" class="service-a-tag text-decoration-none text-center"><p class="text-center">{{ $services[3*$i+$j]->title }}</p></a>
-                    
+                        <img src="{{ substr($services[3*(floor(sizeof($services)/3))+$j]->image_path, 1) }}" alt="">
+                        <a href="/services/{{ $services[3*(floor(sizeof($services)/3))+$j]->id }}" class="service-a-tag text-decoration-none text-center"><p class="text-center">{{ $services[3*(floor(sizeof($services)/3))+$j]->title }}</p></a>
+                        
                     </div>
                     @endfor
                 </div>

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Orchid\Screens;
 
+use Orchid\Screen\Actions\Menu;
+
 use Orchid\Screen\Actions\Link;
 use Orchid\Screen\Screen;
 use Orchid\Support\Facades\Layout;
@@ -15,14 +17,14 @@ class PlatformScreen extends Screen
      *
      * @var string
      */
-    public $name = 'Get Started';
+    public $name = 'Admin Panel';
 
     /**
      * Display header description.
      *
      * @var string
      */
-    public $description = 'Welcome to your Orchid application.';
+    public $description = '';
 
     /**
      * Query data.
@@ -42,17 +44,17 @@ class PlatformScreen extends Screen
     public function commandBar(): array
     {
         return [
-            Link::make('Website')
-                ->href('http://orchid.software')
-                ->icon('globe-alt'),
+            // Link::make('Website')
+            //     ->href('http://orchid.software')
+            //     ->icon('globe-alt'),
 
-            Link::make('Documentation')
-                ->href('https://orchid.software/en/docs')
-                ->icon('docs'),
+            // Link::make('Documentation')
+            //     ->href('https://orchid.software/en/docs')
+            //     ->icon('docs'),
 
-            Link::make('GitHub')
-                ->href('https://github.com/orchidsoftware/platform')
-                ->icon('social-github'),
+            // Link::make('GitHub')
+            //     ->href('https://github.com/orchidsoftware/platform')
+            //     ->icon('social-github'),
         ];
     }
 
@@ -64,7 +66,28 @@ class PlatformScreen extends Screen
     public function layout(): array
     {
         return [
-            Layout::view('platform::partials.welcome'),
+            // Layout::view('platform::partials.welcome'),
+            Layout::rows([
+                Link::make('Teams')
+                    ->href('/admin/crud/list/team-resources'),
+                
+                Link::make('Service Content')
+                    ->href('/admin/crud/list/services-content-resources'), 
+                
+                Link::make('Services')
+                    ->href('/admin/crud/list/services-resources'),
+                
+                Link::make('Posts')
+                    ->href('/admin/crud/list/post-resources'),
+                
+                Link::make('Background Images')
+                    ->href('/admin/crud/list/background-images-resources'), 
+                
+                Link::make('Contacts')
+                    ->href('/admin/crud/list/contact-resources'),
+                
+             ]),
+
         ];
     }
 }

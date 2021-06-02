@@ -198,4 +198,12 @@ class ExampleCardsScreen extends Screen
     {
         Toast::warning($request->get('toast', 'Hello, world! This is a toast message.'));
     }
+
+
+    public static function displayInNavigation(): bool
+    {
+        return false;
+    }
+
+
 }

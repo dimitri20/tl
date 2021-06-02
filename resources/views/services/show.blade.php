@@ -15,8 +15,8 @@
 
                 <h2 class="title-align-center">{{ $service_title }}</h2>
 
-                <div class="service-image">
-                    <img src="/images/service.jpeg" alt="">
+                <div class="service-image d-flex justify-content-center">
+                    <img src="{{ $service_image }}" alt="" class="post-image ">
                 </div>
 
               

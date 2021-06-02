@@ -9,18 +9,16 @@ use Orchid\Attachment\Attachable;
 use Orchid\Filters\Filterable;
 use Orchid\Screen\AsSource;
 
-class Post extends Model
+class Contact extends Model
 {
     use HasFactory, AsSource, Filterable, Attachable;
 
-    protected $table = 'posts';
+    protected $table = 'contact';
 
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'slug',
-        'title',
-        'content',
-        'image_path'
+        'contact_name',
+        'contact_info'
     ];
 }

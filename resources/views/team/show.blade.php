@@ -11,16 +11,15 @@
                 <div class="back"><a href="/team"><img src="/images/arrow-back.svg" alt="back"></a></div>
                 <div class="row">
                     <div class="col-sm person-container">
-                        <img src="/storage/team/{{ $teammate->image_path }}" alt="">
+                        <img src="{{ asset(substr($teammate->image_path, 1)) }}" alt="">
                         <h4 class="text-center fw-bolder">{{ $teammate->name }}</h4>
                         <p class="text-center">{{ $teammate->position }}</p>
                     </div>
     
-                    <div class="col-sm">
+                    <div class="col-sm text-main-formatting">
+
+                        {!! $teammate->about !!}
                         
-                        <p class="text-main-formatting">
-                            {!! str_replace('<br />', "\r\n", $teammate->about) !!}
-                        </p>
     
                     </div>
                 </div>
@@ -31,4 +30,6 @@
     </div>
 </header>
     
+
+@include('layouts/footer')
 @endsection

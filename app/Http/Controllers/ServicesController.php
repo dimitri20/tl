@@ -49,12 +49,24 @@ class ServicesController extends Controller
     public function show($id)
     {
         
-        $services = Service::where('services_id', $id)->get();
-        $service_title = Services::where('id', $id)->get();
         
-        return view('services.show')
+        
+        $services = Service::where('services_id', $id)->get();
+        $services_list = Services::where('id', $id)->get();
+        
+        if($services->count() == 0)
+        {
+
+            return abort(404);
+
+        } 
+        else 
+        {
+            return view('services.show')
                 ->with('services', $services)
-                ->with('service_title', $service_title[0]['title']);
+                ->with('service_title', $services_list[0]['title'])
+                ->with('service_image', substr($services_list[0]['image_path'], 1));
+        }
     }
 
     /**

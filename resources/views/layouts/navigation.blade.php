@@ -3,11 +3,11 @@
 <div class="container main-nav-container">
 
   <div class="container main-logo-container">
-    <a href="{{ asset('/') }}" id="logo"><img src="/images/logo/TL-icon-size-150x150.png" alt="LOGO"></a>
+    <a href="{{ asset('/') }}" id="logo"><img src="/images/logoWithWhiteContour.png" alt="LOGO"></a>
   </div>
 
   <button id="main-navbar-toggler" onclick="navbarToggle()">
-      <img src="images/menu-toggler.svg" alt="toggle">
+    <img src="images/menu-toggler.svg" alt="toggle">
   </button>
 
   <div class="container">
@@ -74,7 +74,7 @@
         </div>
       </div>
 
-  </nav>
+    </nav>
 
 
   </div>
@@ -86,9 +86,40 @@
   <div class="carousel-linear-gradient"></div>
   <div class="carousel-inner">
       
-    
-    <img src="images/1.jpg" class="d-block" alt="...">
+  
     
 
+    <img src="
+
+    <?php 
+
+      $url = Request::path();
+      use App\Models\BackgroundImage;
+      $images = BackgroundImage::where('page_url', $url)->get();
+
+      
+      if($images->count() > 0){
+        echo substr($images[0]['image_path'], 1);
+      } 
+      elseif(request()->is('services*')){
+        echo substr(BackgroundImage::where('page_url', 'services')->get()[0]['image_path'], 1);
+      }
+      elseif(request()->is('team*')){
+        echo substr(BackgroundImage::where('page_url', 'team')->get()[0]['image_path'], 1);
+      }
+      elseif(request()->is('blog*')){
+        echo substr(BackgroundImage::where('page_url', 'blog')->get()[0]['image_path'], 1);
+      }
+      else {
+        echo '';
+      }
+
+      
+
+    ?>
+    
+    " alt="">
+
+    
   </div>
 </div>

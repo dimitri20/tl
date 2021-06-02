@@ -13,12 +13,12 @@
 
                 <h2 class="title-align-center">{{ $post['title'] }}</h2>
 
-                <div class="service-image">
-                    <img src="/images/service.jpeg" alt="">
+                <div class="service-image d-flex justify-content-center">
+                    <img src="{{ asset(substr($post->image_path, 1)) }}" alt="" class="post-image ">
                 </div>
 
                 <div style="margin-top: 20px;" class="text-main-formatting">
-                    {{ $post['description'] }}
+                    {!! $post['content'] !!}
                 </div>
 
             </div>
@@ -28,7 +28,6 @@
 </header>
 
 
-@include('layouts.footer')
 
-
+@include('layouts/footer')
 @endsection

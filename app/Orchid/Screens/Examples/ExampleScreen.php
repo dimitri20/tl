@@ -41,6 +41,11 @@ class ExampleScreen extends Screen
      */
     public $description = 'Sample Screen Components';
 
+
+    public static function displayInNavigation(): bool
+    {
+        return false;
+    }
     /**
      * Query data.
      *

@@ -19,22 +19,19 @@
                     </div>
                     
                     <div id="contact-info-left-side">
-                      <p><h3>ვან ფოინთი</h3></p>
-                      <p><a href="#">HR@ONEPOINT.GE</a></p>
-                      <p>მისამართი: თბილისი, ჯონ (მალხაზ) შალიკაშვილის ქ. 8</p>
-                      <p>ტელეფონი: <a href="#">+995 577 753 332</a></p>
+                      <p><h3>TLLAW</h3></p>
+                      <p><a href="#" class="text-decoration-none contact-a">{{ $contact_info['mail'] }}</a></p>
+                      <p><a href="#" class="text-decoration-none contact-a">{{ $contact_info['physical_address'] }}</a></p>
+                      <p>ტელეფონი: <a href="#" class="text-decoration-none contact-a">{{ $contact_info['phone'] }}</a></p>
                      
                       <div class="social">
-                        <a href="facebook.com" class="social-icon"><img src="images/facebook.svg" alt=""></a>
-                        <a href="facebook.com" class="social-icon"><img src="images/facebook.svg" alt=""></a>
+                        <a href="https://www.facebook.com" class="social-icon"><img src="images/facebook.svg" alt=""></a>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="services-left-hand-items-container"> 
-                  <!-- <div id="map" style="width:100%; height:400px;"></div> -->
-                  {{-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDSxB9csGmToyGHlFyupa2m4QCBib6w4Dk&q=Georgia, Tbilisi" height="300" width="100%" frameborder="0"></iframe> --}}
                   <h3 class="send-us-message-headers">SEND US A MESSAGE</h3>
                   <form class="row g-3">
                     <div class="col-md-6">

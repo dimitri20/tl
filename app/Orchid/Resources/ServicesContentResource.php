@@ -2,28 +2,26 @@
 
 namespace App\Orchid\Resources;
 
-
 use Orchid\Crud\Resource;
 use Orchid\Screen\TD;
-use Orchid\Screen\Fields\Input;
-use Orchid\Screen\Fields\Quill;
-use Orchid\Screen\Fields\Cropper;
-use Orchid\Screen\Fields\TextArea;
-use Orchid\Screen\Actions\Button;
 use Orchid\Screen\Sight;
+
+use Orchid\Screen\Fields\Textarea;
+use Orchid\Screen\Fields\Relation;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Post;
+use App\Models\Service;
+use App\Models\Services;
 
-class PostResource extends Resource
+class ServicesContentResource extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = Post::class;
+    public static $model = Service::class;
 
     /**
      * Get the fields displayed by the resource.
@@ -33,28 +31,15 @@ class PostResource extends Resource
     public function fields(): array
     {
         return [
-            Input::make('title')
+            Textarea::make('content')
                 ->required()
-                ->title('Title')
-                ->placeholder('Title'),
+                ->rows(10)
+                ->title('Content'),
 
-            Cropper::make('image_path')
+            Relation::make('services_id')
                 ->required()
-                ->width(400)
-                ->height(400)
-                ->targetRelativeUrl(),
-
-            TextArea::make('slug')
-                ->required()
-                ->title('Slug')
-                ->rows(3)
-                ->maxlength(100)
-                ->placeholder('Post description for preview'),
-
-            Quill::make('content')
-                ->required()
-                ->title('Content')
-                ->placeholder('Post Content'),
+                ->fromModel(Services::class, 'title')
+                ->title('Choose Service')
         ];
     }
 
@@ -68,14 +53,7 @@ class PostResource extends Resource
         return [
             TD::make('id'),
 
-            TD::make('image_path', "Image")->render(function($patient){
-                $image = substr($patient->image_path, 1);
-                return "<img src=\"$image\" style=\"width:200px; height:auto;\" alt=\"\">";
-            }),
-
-            TD::make('title'),
-
-            TD::make('slug'),
+            TD::make('content'),
 
             TD::make('created_at', 'Date of creation')
                 ->render(function ($model) {
@@ -98,17 +76,10 @@ class PostResource extends Resource
     {
         return [
             Sight::make('id'),
-            Sight::make('title'),
-            Sight::make('slug'),
-            Sight::make('image_path')->render(function($patient){
-                $image = substr($patient->image_path, 1);
-                return "<img src=\"$image\" style=\"width:300px; height:auto;\" alt=\"\">";
-            }),
             Sight::make('content')
         ];
     }
 
-    
     /**
      * Get the filters available for the resource.
      *
@@ -117,16 +88,6 @@ class PostResource extends Resource
     public function filters(): array
     {
         return [];
-    }
-
-        /**
-     * Get the resource should be displayed in the navigation
-     *
-     * @return bool
-     */
-    public static function displayInNavigation(): bool
-    {
-        return true;
     }
 
     public function onSave(Request $request, Model $model)

@@ -42,6 +42,11 @@ class ExampleLayoutsScreen extends Screen
         return [];
     }
 
+    public static function displayInNavigation(): bool
+    {
+        return false;
+    }
+
     /**
      * Views.
      *

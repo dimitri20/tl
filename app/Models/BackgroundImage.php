@@ -9,18 +9,16 @@ use Orchid\Attachment\Attachable;
 use Orchid\Filters\Filterable;
 use Orchid\Screen\AsSource;
 
-class Post extends Model
+class BackgroundImage extends Model
 {
     use HasFactory, AsSource, Filterable, Attachable;
 
-    protected $table = 'posts';
+    protected $table = 'background_images';
 
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'slug',
-        'title',
-        'content',
+        'page_url',
         'image_path'
     ];
 }
