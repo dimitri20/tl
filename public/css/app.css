@@ -121,7 +121,7 @@ img{
 
 .person-container h4, .person-container p{
     margin: 15px 0;
-    color: #576173;
+    color: #000000;
 }
 
 .carousel-linear-gradient{
@@ -203,13 +203,14 @@ img{
 }
 
 .header-text-container{
-    margin-top: 50px;
+    margin-top: 30px;
+    padding-left: 75px;
     color: #fff;
     font-family: bpg_nino_mtavruli_normal;
 }
 
 .header-top-text{
-    font-size: 70px;
+    font-size: 60px;
     font-weight: bold;
     color: #fff;
 }
@@ -275,7 +276,7 @@ img{
 .section-outer-container{
     width: 100vw;
     padding: 80px 0px;
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.6);
 }
 
 #services{
@@ -333,7 +334,7 @@ img{
 .send-us-message-headers{
     padding: 15px 0;
     font-family: 'bpg_nino_mtavruli_normal';
-    color: #576173;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -341,12 +342,12 @@ img{
     font-size: 15px;
     font-family: 'bpg_nino_mtavruli_normal';
     font-weight: 700;
-    color: #576173;
+    color: #000000;
 }
 
 #contact-info-left-side h3{
     font-family: 'bpg_nino_mtavruli_normal';
-    color: #576173;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -422,7 +423,7 @@ img{
 }
 
 .text-main-formatting{
-    color: #576173;
+    color: #000000;
     text-align: justify;
     font-size: 20px;
     font-family: 'bpg_glaho';
@@ -473,7 +474,7 @@ amis qvemot footer iqneba
  
 #footer{
     width:100vw;
-    height:80px;
+    height: 60px;
     background-color:#060c17;
     position: relative;
 }
@@ -488,13 +489,11 @@ amis qvemot footer iqneba
     font-family:'bpg_nino_mtavruli_normal';
     font-weight: 800;
     align-items: center;
-
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 #footer-content a {
@@ -601,7 +600,12 @@ responsivee
 
     .carousel-inner img{
         height: 100%;
+        /* padding-left: 36px; */
         min-width: 100vw;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 56% 40%;
+           object-position: 56% 40%;
         width: auto;
     }
 
@@ -890,20 +894,20 @@ responsivee
     }
 
     .header-top-text{
-        font-size: 80px;
+        font-size: 60px;
         letter-spacing: 0.2em;
         /* font-weight: bold; */
     }
 
     .appearing-text-container p {
-        font-size: 25px;
+        font-size: 18px;
     }
     .service-image{
         width: 600px;
     }
 
     .header-text-container h3 {
-        font-size: 50px;
+        font-size: 37px;
         
     }
 
@@ -945,10 +949,10 @@ responsivee
     }
 
     #logo{
-        width: 230px;
+        width: 172px;
     }
     a.nav-link {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .section-inner-container {
@@ -1097,6 +1101,8 @@ responsivee
 #######################################################################
 
 */
+
+
 
 
 

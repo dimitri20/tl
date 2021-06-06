@@ -1,6 +1,0 @@
-DB_CONNECTION=mysql
-DB_HOST=213-136-82-93.root-serv.com
-DB_PORT=8090
-DB_DATABASE=tllaw_tl
-DB_USERNAME=tllaw_tl
-DB_PASSWORD=m5NwF3sjAGEf4#v-

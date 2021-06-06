@@ -54,8 +54,8 @@ class BackgroundImagesResource extends Resource
         return [
             TD::make('id'),
             TD::make('image_path')->render(function($patient){
-                $image = substr($patient->image_path, 1);
-                return "<img src=\"$image\" style=\"width:300px; height:auto;\" alt=\"\">";
+                //$image = substr($patient->image_path, 1);
+                return "<img src=\"$patient->image_path\" style=\"width:300px; height:auto;\" alt=\"\">";
             }),
             TD::make('page_url'),
             TD::make('image_path'),
@@ -81,8 +81,8 @@ class BackgroundImagesResource extends Resource
         return [
             Sight::make('page_url'),
             Sight::make('image_path')->render(function($patient){
-                $image = substr($patient->image_path, 1);
-                return "<img src=\"$image\" style=\"width:300px; height:auto;\" alt=\"\">";
+                //$image = substr($patient->image_path, 1);
+                return "<img src=\"$patient->image_path\" style=\"width:300px; height:auto;\" alt=\"\">";
             }),
             Sight::make('image_path')
         ];

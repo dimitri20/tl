@@ -99,17 +99,21 @@
 
       
       if($images->count() > 0){
-        echo substr($images[0]['image_path'], 1);
-      } 
-      elseif(request()->is('services*')){
+        
+
+        if(request()->is('services*')){
         echo substr(BackgroundImage::where('page_url', 'services')->get()[0]['image_path'], 1);
-      }
-      elseif(request()->is('team*')){
-        echo substr(BackgroundImage::where('page_url', 'team')->get()[0]['image_path'], 1);
-      }
-      elseif(request()->is('blog*')){
-        echo substr(BackgroundImage::where('page_url', 'blog')->get()[0]['image_path'], 1);
-      }
+        }
+        elseif(request()->is('team*')){
+          echo substr(BackgroundImage::where('page_url', 'team')->get()[0]['image_path'], 1);
+        }
+        elseif(request()->is('blog*')){
+          echo substr(BackgroundImage::where('page_url', 'blog')->get()[0]['image_path'], 1);
+        }
+        else {
+          echo substr($images[0]['image_path'], 1);
+        }
+      } 
       else {
         echo '';
       }

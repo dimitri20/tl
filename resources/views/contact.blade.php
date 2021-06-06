@@ -19,10 +19,10 @@
                     </div>
                     
                     <div id="contact-info-left-side">
-                      <p><h3>TLLAW</h3></p>
-                      <p><a href="#" class="text-decoration-none contact-a">{{ $contact_info['mail'] }}</a></p>
-                      <p><a href="#" class="text-decoration-none contact-a">{{ $contact_info['physical_address'] }}</a></p>
-                      <p>ტელეფონი: <a href="#" class="text-decoration-none contact-a">{{ $contact_info['phone'] }}</a></p>
+                      <p><h3>თიელი</h3></p>
+                      <p><a href="#" class="text-decoration-none contact-a">{{ (!empty($contact_info['mail'])) ? $contact_info['mail'] : '' }}</a></p>
+                      <p><a href="#" class="text-decoration-none contact-a">{{ (!empty($contact_info['physical_address'])) ? $contact_info['physical_address'] : '' }}</a></p>
+                      <p>ტელეფონი: <a href="#" class="text-decoration-none contact-a">{{ (!empty($contact_info['phone'])) ? $contact_info['phone'] : '' }}</a></p>
                      
                       <div class="social">
                         <a href="https://www.facebook.com" class="social-icon"><img src="images/facebook.svg" alt=""></a>
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="services-left-hand-items-container"> 
-                  <h3 class="send-us-message-headers">SEND US A MESSAGE</h3>
+                  <h3 class="send-us-message-headers">მოგვწერე წერილი</h3>
                   <form class="row g-3">
                     <div class="col-md-6">
                       

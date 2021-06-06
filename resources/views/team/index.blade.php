@@ -7,8 +7,16 @@
     @include('layouts.navigation')
 
     <div class="section-outer-container">
+        
+
         <div class="container">
+            
+
             <div class="section-inner-container">
+                <div id="services-title-container">
+                    <h2 class="title-align-center logo-colored">ჩვენი გუნდი</h2>
+                </div>
+                
                 @for ($i = 0; $i < floor(sizeof($team)/3); $i++)
                 <div class="row">
                     
