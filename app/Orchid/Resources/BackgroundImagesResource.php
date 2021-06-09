@@ -3,6 +3,7 @@
 namespace App\Orchid\Resources;
 
 use Orchid\Crud\Resource;
+use Orchid\Screen\Fields\Select;
 use Orchid\Screen\TD;
 
 use Orchid\Screen\Sight;
@@ -25,6 +26,21 @@ class BackgroundImagesResource extends Resource
      */
     public static $model = BackgroundImage::class;
 
+    private function getPaths(){
+        $images = BackgroundImage::all()->toArray();
+
+        $page_urls = [
+            "/" => "/",
+            "about" => "about",
+            "team" => "team",
+            "services" =>"services",
+            "blog" => "blog",
+            "contact" => "contact",
+        ];
+
+        return $page_urls;
+    }
+
     /**
      * Get the fields displayed by the resource.
      *
@@ -33,10 +49,11 @@ class BackgroundImagesResource extends Resource
     public function fields(): array
     {
         return [
-            Input::make('page_url')
+
+            Select::make('page_url')
                 ->required()
-                ->title('Page URL')
-                ->placeholder('Enter Page Relative Url'),
+                ->options($this->getPaths())
+                ->title('Select page'),
 
             Picture::make('image_path')
                 ->required()

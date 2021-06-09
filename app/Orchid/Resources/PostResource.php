@@ -33,28 +33,62 @@ class PostResource extends Resource
     public function fields(): array
     {
         return [
-            Input::make('title')
+            Input::make('title_ka')
                 ->required()
-                ->title('Title')
+                ->title('Title (Georgian)')
                 ->placeholder('Title'),
+
+            TextArea::make('slug_ka')
+                ->required()
+                ->title('Slug (Georgian)')
+                ->rows(3)
+                ->maxlength(100)
+                ->placeholder('Post description for preview'),
+
+            Quill::make('content_ka')
+                ->required()
+                ->title('Content (Georgian)')
+                ->placeholder('Post Content'),
+
+            Input::make('title_en')
+                ->required()
+                ->title('Title (English)')
+                ->placeholder('Title'),
+
+            TextArea::make('slug_en')
+                ->required()
+                ->title('Slug (English)')
+                ->rows(3)
+                ->maxlength(100)
+                ->placeholder('Post description for preview'),
+
+            Quill::make('content_en')
+                ->required()
+                ->title('Content (English)')
+                ->placeholder('Post Content'),
+
+            Input::make('title_ru')
+                ->required()
+                ->title('Title (Russian)')
+                ->placeholder('Title'),
+
+            TextArea::make('slug_ru')
+                ->required()
+                ->title('Slug (Russian)')
+                ->rows(3)
+                ->maxlength(100)
+                ->placeholder('Post description for preview'),
+
+            Quill::make('content_ru')
+                ->required()
+                ->title('Content (Russian)')
+                ->placeholder('Post Content'),
 
             Cropper::make('image_path')
                 ->required()
                 ->width(400)
                 ->height(400)
                 ->targetRelativeUrl(),
-
-            TextArea::make('slug')
-                ->required()
-                ->title('Slug')
-                ->rows(3)
-                ->maxlength(100)
-                ->placeholder('Post description for preview'),
-
-            Quill::make('content')
-                ->required()
-                ->title('Content')
-                ->placeholder('Post Content'),
         ];
     }
 
@@ -69,13 +103,13 @@ class PostResource extends Resource
             TD::make('id'),
 
             TD::make('image_path', "Image")->render(function($patient){
-                $image = substr($patient->image_path, 1);
+                $image = $patient['image_path'];
                 return "<img src=\"$image\" style=\"width:200px; height:auto;\" alt=\"\">";
             }),
 
-            TD::make('title'),
+            TD::make('title_ka'),
 
-            TD::make('slug'),
+            TD::make('slug_ka'),
 
             TD::make('created_at', 'Date of creation')
                 ->render(function ($model) {
@@ -98,17 +132,29 @@ class PostResource extends Resource
     {
         return [
             Sight::make('id'),
-            Sight::make('title'),
-            Sight::make('slug'),
             Sight::make('image_path')->render(function($patient){
-                $image = substr($patient->image_path, 1);
+                $image = $patient['image_path'];
                 return "<img src=\"$image\" style=\"width:300px; height:auto;\" alt=\"\">";
             }),
-            Sight::make('content')
+            Sight::make('title_ka'),
+            Sight::make('slug_ka'),
+            Sight::make('content_ka')->render(function($content){
+                return html_entity_decode($content['content_ka']);
+            }),
+            Sight::make('title_en'),
+            Sight::make('slug_en'),
+            Sight::make('content_en')->render(function($content){
+                return html_entity_decode($content['content_en']);
+            }),
+            Sight::make('title_ru'),
+            Sight::make('slug_ru'),
+            Sight::make('content_ru')->render(function($content){
+                return html_entity_decode($content['content_ru']);
+            }),
         ];
     }
 
-    
+
     /**
      * Get the filters available for the resource.
      *

@@ -3,6 +3,7 @@
 namespace App\Orchid\Resources;
 
 use Orchid\Crud\Resource;
+use Orchid\Screen\Fields\Select;
 use Orchid\Screen\TD;
 use Orchid\Screen\Sight;
 
@@ -31,10 +32,30 @@ class ContactResource extends Resource
     public function fields(): array
     {
         return [
-            Input::make('contact_name')
+            Select::make('language')
                 ->required()
-                ->title('Contact Name')
-                ->placeholder('Contact Name'),
+                ->options([
+                    'ka'   => 'ka',
+                    'en' => 'en',
+                    'ru' => 'ru'
+                ])
+                ->title('Select language (Select ka if there are no other translations for this text)'),
+//
+//            Input::make('contact_name')
+//                ->required()
+//                ->title('Contact Name ')
+//                ->placeholder('Contact Name'),
+
+            Select::make('language')
+                ->required()
+                ->options([
+                    'mail'   => 'mail',
+                    'phone' => 'phone',
+                    'physical_address_ka' => 'physical_address_ka',
+                    'physical_address_en' => 'physical_address_en',
+                    'physical_address_ru' => 'physical_address_ru',
+                ])
+                ->title('Select Contact info'),
 
             Textarea::make('contact_info')
                 ->required()
@@ -51,7 +72,7 @@ class ContactResource extends Resource
     public function columns(): array
     {
         return [
-            
+
             TD::make('contact_name'),
 
             TD::make('contact_info'),

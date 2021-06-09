@@ -32,9 +32,19 @@ class ServicesResource extends Resource
     public function fields(): array
     {
         return [
-            Input::make('title')
+            Input::make('title_ka')
                 ->required()
-                ->title('Title')
+                ->title('Title (Georgian)')
+                ->placeholder('Title'),
+
+            Input::make('title_en')
+                ->required()
+                ->title('Title (English)')
+                ->placeholder('Title'),
+
+            Input::make('title_ru')
+                ->required()
+                ->title('Title (Russian)')
                 ->placeholder('Title'),
 
             Cropper::make('image_path')
@@ -55,22 +65,22 @@ class ServicesResource extends Resource
         return [
             TD::make('id'),
 
-            TD::make('title'),
+            TD::make('title_ka'),
 
             TD::make('image_path', 'Image')->render(function($patient){
-                $image = substr($patient->image_path, 1);
+                $image = $patient->image_path;
                 return "<img src=\"$image\" style=\"width:200px; height:auto;\" alt=\"\">";
             }),
 
-            TD::make('created_at', 'Date of creation')
-                ->render(function ($model) {
-                    return $model->created_at->toDateTimeString();
-                }),
-
-            TD::make('updated_at', 'Update date')
-                ->render(function ($model) {
-                    return $model->updated_at->toDateTimeString();
-                }),
+//            TD::make('created_at', 'Date of creation')
+//                ->render(function ($model) {
+//                    return $model->created_at->toDateTimeString();
+//                }),
+//
+//            TD::make('updated_at', 'Update date')
+//                ->render(function ($model) {
+//                    return $model->updated_at->toDateTimeString();
+//                }),
         ];
     }
 
@@ -84,10 +94,12 @@ class ServicesResource extends Resource
         return [
             Sight::make('id'),
             Sight::make('image_path')->render(function($patient){
-                $image = substr($patient->image_path, 1);
+                $image = $patient['image_path'];
                 return "<img src=\"$image\" style=\"width:300px; height:auto;\" alt=\"\">";
             }),
-            Sight::make('title')
+            Sight::make('title_ka'),
+            Sight::make('title_en'),
+            Sight::make('title_ru'),
         ];
     }
 

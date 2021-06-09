@@ -13,14 +13,16 @@ use Orchid\Screen\AsSource;
 class Services extends Model
 {
     use HasFactory, AsSource, Filterable, Attachable;
-    
+
     protected $table = 'services';
 
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'title',
+        'title_ka',
+        'title_en',
+        'title_ru',
         'image_path'
     ];
-    
+
 }

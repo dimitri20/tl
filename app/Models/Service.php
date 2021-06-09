@@ -18,7 +18,9 @@ class Service extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'content',
+        'content_ka',
+        'content_en',
+        'content_ru',
         'services_id'
     ];
 

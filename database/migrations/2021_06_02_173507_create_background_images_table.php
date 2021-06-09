@@ -15,7 +15,7 @@ class CreateBackgroundImagesTable extends Migration
     {
         Schema::create('background_images', function (Blueprint $table) {
             $table->id();
-            $table->string('page_url');
+            $table->string('page_url')->unique();
             $table->string('image_path');
             $table->timestamps();
         });

@@ -18,9 +18,15 @@ class Team extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'name',
-        'position',
-        'about',
+        'name_ka',
+        'position_ka',
+        'about_ka',
+        'name_en',
+        'position_en',
+        'about_en',
+        'name_ru',
+        'position_ru',
+        'about_ru',
         'image_path'
     ];
 

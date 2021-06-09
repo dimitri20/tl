@@ -15,7 +15,9 @@ class CreateServicesContentTable extends Migration
     {
         Schema::create('services_content', function (Blueprint $table) {
             $table->id();
-            $table->text("content");
+            $table->text("content_ka");
+            $table->text("content_en");
+            $table->text("content_ru");
             $table->foreignId('services_id')->onDelete('cascade');
             $table->timestamps();
         });

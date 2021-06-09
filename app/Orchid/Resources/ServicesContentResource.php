@@ -31,14 +31,24 @@ class ServicesContentResource extends Resource
     public function fields(): array
     {
         return [
-            Textarea::make('content')
+            Textarea::make('content_ka')
                 ->required()
                 ->rows(10)
-                ->title('Content'),
+                ->title('Content (Georgian)'),
+
+            Textarea::make('content_en')
+                ->required()
+                ->rows(10)
+                ->title('Content (English)'),
+
+            Textarea::make('content_ru')
+                ->required()
+                ->rows(10)
+                ->title('Content (Russian)'),
 
             Relation::make('services_id')
                 ->required()
-                ->fromModel(Services::class, 'title')
+                ->fromModel(Services::class, 'title_ka')
                 ->title('Choose Service')
         ];
     }
@@ -53,17 +63,20 @@ class ServicesContentResource extends Resource
         return [
             TD::make('id'),
 
-            TD::make('content'),
+            TD::make('content', "Service Title")->render(function($data){
+               $service = Services::where('id', $data['services_id'])->get()->toArray();
+               return $service[0]['title_ka'];
+            }),
 
-            TD::make('created_at', 'Date of creation')
-                ->render(function ($model) {
-                    return $model->created_at->toDateTimeString();
-                }),
-
-            TD::make('updated_at', 'Update date')
-                ->render(function ($model) {
-                    return $model->updated_at->toDateTimeString();
-                }),
+//            TD::make('created_at', 'Date of creation')
+//                ->render(function ($model) {
+//                    return $model->created_at->toDateTimeString();
+//                }),
+//
+//            TD::make('updated_at', 'Update date')
+//                ->render(function ($model) {
+//                    return $model->updated_at->toDateTimeString();
+//                }),
         ];
     }
 
@@ -76,7 +89,13 @@ class ServicesContentResource extends Resource
     {
         return [
             Sight::make('id'),
-            Sight::make('content')
+            Sight::make('content', "Service Title")->render(function($data){
+                $service = Services::where('id', $data['services_id'])->get()->toArray();
+                return $service[0]['title_ka'];
+            }),
+            Sight::make('content_ka'),
+            Sight::make('content_en'),
+            Sight::make('content_ru'),
         ];
     }
 

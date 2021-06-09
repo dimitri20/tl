@@ -176,7 +176,7 @@ img{
     display: inline-block;
     padding: 0;
     margin-left: 75px;
-    width: 130px;
+    width: 250px;
 }
 
 .appearing-text-container{
@@ -949,7 +949,7 @@ responsivee
     }
 
     #logo{
-        width: 172px;
+        width: 250px;
     }
     a.nav-link {
         font-size: 18px;

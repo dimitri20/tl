@@ -18,9 +18,15 @@ class Post extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'slug',
-        'title',
-        'content',
+        'slug_ka',
+        'title_ka',
+        'content_ka',
+        'slug_en',
+        'title_en',
+        'content_en',
+        'slug_ru',
+        'title_ru',
+        'content_ru',
         'image_path'
     ];
 }

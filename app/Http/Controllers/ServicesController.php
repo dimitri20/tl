@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App;
 use Illuminate\Http\Request;
 use App\Models\Services;
 use App\Models\Service;
@@ -14,9 +14,22 @@ class ServicesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
+    public function index()
+    {
+        $services = Services::all()->toArray();
+        $current_lang = App::currentLocale();
+        $services_localized = [];
+
+        for ($i = 0; $i < sizeof($services); $i++){
+            $services_localized[$i] = [
+                "title" => $services[0]['title_'.$current_lang],
+                "id" => $services[0]['id'],
+                "image_path" => $services[0]['image_path'],
+            ];
+        }
+
         return view('services.index')
-                    ->with('services', Services::all());
+                    ->with('services', $services_localized);
     }
 
     /**
@@ -46,27 +59,38 @@ class ServicesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($lang, $id)
     {
-        
-        
-        
-        $services = Service::where('services_id', $id)->get();
+
+        $service_content = Service::where('services_id', $id)->get()->toarray();
         $services_list = Services::where('id', $id)->get();
-        
-        if($services->count() == 0)
+        $service_name_localized = $services_list[0]['title_'.App::currentLocale()];
+        $service_image = $services_list[0]['image_path'];
+
+
+
+        if(sizeof($service_content) == 0)
         {
 
-            return abort(404);
+            return abort(400);
 
-        } 
-        else 
-        {
-            return view('services.show')
-                ->with('services', $services)
-                ->with('service_title', $services_list[0]['title'])
-                ->with('service_image', substr($services_list[0]['image_path'], 1));
         }
+        else
+        {
+            for ($i = 0; $i < sizeof($service_content); $i++)
+            {
+                $service_content_localized[$i] = [
+                    "id" => $service_content[$i]['id'],
+                    "content" => $service_content[$i]["content_".App::currentLocale()],
+                ];
+            }
+
+            return view('services.show')
+                ->with('service_contents', $service_content_localized)
+                ->with('service_title', $service_name_localized)
+                ->with('service_image', substr($service_image, 1));
+        }
+
     }
 
     /**

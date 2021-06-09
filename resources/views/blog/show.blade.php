@@ -3,18 +3,18 @@
 @section('content')
 
 <header id="header">
-    
+
     @include('layouts.navigation')
 
     <div class="section-outer-container">
         <div class="container">
             <div class="section-inner-container">
-                <div class="back"><a href="/blog"><img src="/images/arrow-back.svg" alt="back"></a></div>
+                <div class="back"><a href="{{ route('blog', ['language' => app()->currentLocale()]) }}"><img src="{{ asset('storage/icons/arrow-back.svg') }}" alt="back"></a></div>
 
                 <h2 class="title-align-center">{{ $post['title'] }}</h2>
 
                 <div class="service-image d-flex justify-content-center">
-                    <img src="{{ asset(substr($post->image_path, 1)) }}" alt="" class="post-image ">
+                    <img src="{{ asset(substr($post['image_path'], 1)) }}" alt="" class="post-image ">
                 </div>
 
                 <div style="margin-top: 20px;" class="text-main-formatting">
