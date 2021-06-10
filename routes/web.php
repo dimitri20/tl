@@ -43,6 +43,7 @@ Route::group(['prefix' => '{language}'], function(){
     Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.id')->where('id', '[0-9]+');
 
     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
     Route::get('/services', [ServicesController::class, 'index'])->name('services');
     Route::get('/services/{id}', [ServicesController::class, 'show'])->name('services.id')->where('id', '[0-9]+');

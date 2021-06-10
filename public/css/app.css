@@ -52,7 +52,7 @@ li.nav-item.lang-menu-item {
     margin-top: 50px;
 }
 .service-items li {
-    
+
     border-left: 10px solid #ef7a5c;
     margin: 10px;
     padding: 5px;
@@ -72,10 +72,10 @@ img{
 
 .post-image{
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     /* width: 100%; */
     -o-object-position: 50% 10%;
-       object-position: 50% 10%;
+    object-position: 50% 10%;
     height: 400px;
     /* min-width: 400px; */
 }
@@ -116,7 +116,7 @@ img{
     /* height: auto; */
     height: 300px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 
 .person-container h4, .person-container p{
@@ -281,7 +281,7 @@ img{
 
 #services{
     width: 100%;
-    
+
 }
 
 .service-a-tag{
@@ -321,7 +321,7 @@ img{
 }
 
 .section-right-hand-items-outer-container{
-    
+
     width: 48%;
 }
 
@@ -430,7 +430,7 @@ img{
 }
 
 .section-button{
-    background-color: #576173; 
+    background-color: #576173;
     padding: 10px 20px;
     margin-top: 20px;
 }
@@ -463,15 +463,15 @@ amis zemot sul services iyo
     text-align: center;
 }
 
-/* 
+/*
 
-amis qvemot footer iqneba 
+amis qvemot footer iqneba
 #########################
 #######################
 #################
 */
 
- 
+
 #footer{
     width:100vw;
     height: 60px;
@@ -510,7 +510,7 @@ amis qvemot footer iqneba
 }
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -557,7 +557,7 @@ a.nav-link {
 
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -587,8 +587,8 @@ responsivee
         height: 100vh;
     }
     #logo{
-        margin-left: 30px;
-        width: 90px;
+        margin-left: 0px;
+        width: 150px;
     }
     .title-align-center{
         font-size: 30px;
@@ -598,14 +598,19 @@ responsivee
         display: inline-block;
     }
 
+    .header-text-container{
+        margin-top: 90px;
+        padding-left: 0;
+    }
+
     .carousel-inner img{
         height: 100%;
         /* padding-left: 36px; */
         min-width: 100vw;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
         -o-object-position: 56% 40%;
-           object-position: 56% 40%;
+        object-position: 56% 40%;
         width: auto;
     }
 
@@ -654,7 +659,7 @@ responsivee
         height: 150px;
         z-index: -1;
     }
-    
+
     .nav-link{
         color: #000!important;
     }
@@ -711,7 +716,7 @@ responsivee
 }
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -738,7 +743,7 @@ responsivee
 
 
 @media screen and (min-width:426px){
-    
+
 
     .services-flex-container{
         flex-direction: row;
@@ -789,7 +794,7 @@ responsivee
 
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -822,6 +827,11 @@ responsivee
 
     #main-navbar{
         background-color: transparent !important;
+    }
+
+    .header-text-container {
+        margin-top: 30px;
+        padding-left: 75px;
     }
 
     .nav-link{
@@ -885,7 +895,7 @@ responsivee
     .lang-menu{
         position: absolute;
         right: -30px;
-        top: -170px;
+        top: -100px;
     }
 
     .carousel-item img {
@@ -908,14 +918,14 @@ responsivee
 
     .header-text-container h3 {
         font-size: 37px;
-        
+
     }
 
 
 }
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -970,14 +980,14 @@ responsivee
     .bottom-contact-p {
         font-size: 23px;
     }
-    
+
     .active {
         color: #ef7a5c!important;
     }
 }
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -1020,7 +1030,7 @@ responsivee
 }
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -1049,7 +1059,7 @@ responsivee
 
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -1078,7 +1088,7 @@ responsivee
 
 
 
-/* 
+/*
 
 #######################################################################
 
@@ -1101,6 +1111,7 @@ responsivee
 #######################################################################
 
 */
+
 
 
 

@@ -21,5 +21,7 @@
     "სათაური":"Headline",
     "ტექსტი":"Text",
     "მოგვწერე წერილი":"Send Us a Message",
-    "გაგზავნა":"Send"
+    "გაგზავნა":"Send",
+
+    "წერილი წარმატებით გაიგზავნა." : "Message was sent successfully"
 }

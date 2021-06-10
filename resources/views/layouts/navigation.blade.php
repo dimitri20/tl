@@ -1,5 +1,5 @@
 <div class="main-nav-background"></div>
-    
+
 <div class="container main-nav-container">
 
   <div class="container main-logo-container">
@@ -7,7 +7,7 @@
   </div>
 
   <button id="main-navbar-toggler" onclick="navbarToggle()">
-    <img src="images/menu-toggler.svg" alt="toggle">
+    <img src="{{ asset('storage/icons/menu-toggler.svg') }}" alt="toggle">
   </button>
 
   <div class="container">
@@ -17,7 +17,7 @@
         <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button> -->
-        
+
         <div class="collapse navbar-collapse" id="main-navbar">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -28,11 +28,11 @@
             <li class="nav-item">
               <a class="nav-link {{ (request()->is('*about*')) ? 'active' : '' }}" href="{{ route('about', app()->getLocale()) }}">{{ __('ჩვენ შესახებ') }}</a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link {{ (request()->is('*team*')) ? 'active' : '' }}" href="{{ route('team', app()->getLocale()) }}">{{ __('ჩვენი გუნდი') }}</a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link {{ (request()->is('*services*')) ? 'active' : '' }}" href="{{ route('services', app()->getLocale()) }}">{{ __('სერვისები') }}</a>
             </li>
@@ -50,7 +50,7 @@
           <ul class="lang-menu nav">
 
             <li class="nav-item lang-menu-item">
-              <a 
+              <a
                 href="
                 @php
                   $url = url()->full();
@@ -59,7 +59,7 @@
                   $url = implode('/', $url);
                   echo $url;
                 @endphp
-                " 
+                "
                 class="lang-menu-link">
                 <img src="{{ asset('storage/icons/ge.svg') }}" alt="GE">
                 <span class="lang-menu-text">ქარ</span>
@@ -67,7 +67,7 @@
             </li>
 
             <li class="nav-item lang-menu-item">
-              <a 
+              <a
                 href="
                 @php
                   $url = url()->full();
@@ -76,7 +76,7 @@
                   $url = implode('/', $url);
                   echo $url;
                 @endphp
-                " 
+                "
                 class="lang-menu-link">
                 <img src="{{ asset('storage/icons/en.svg') }}" alt="EN">
                 <span class="lang-menu-text">ENG</span>
@@ -84,7 +84,7 @@
             </li>
 
             <li class="nav-item lang-menu-item">
-              <a 
+              <a
                 href="
                 @php
                   $url = url()->full();
@@ -93,7 +93,7 @@
                   $url = implode('/', $url);
                   echo $url;
                 @endphp
-                " 
+                "
                 class="lang-menu-link">
                 <img src="{{ asset('storage/icons/ru.svg') }}" alt="">
                 <span class="lang-menu-text">РУС</span>
@@ -112,25 +112,25 @@
 </div>
 
 <div id="header-main-carousel">
-  
+
   <div class="carousel-linear-gradient"></div>
   <div class="carousel-inner">
-      
-  
-    
-    
+
+
+
+
     <img src="
 
-    <?php 
+    <?php
 
       use App\Models\BackgroundImage;
       $url = !empty(explode('/',Request::path())[1]) ? explode('/',Request::path())[1] : '/';
-      
+
       $images = BackgroundImage::where('page_url', $url)->get();
-      
-      
+
+
       // echo asset('images/1.jpg');
-      
+
       if($images->count() > 0){
 
         if(request()->is('services*')){
@@ -145,17 +145,17 @@
         else {
           echo URL::to('/').$images[0]['image_path'];
         }
-      } 
+      }
       else {
         echo '';
       }
 
-      
+
 
     ?>
-    
+
     " alt="">
 
-    
+
   </div>
 </div>
