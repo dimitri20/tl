@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FeedbackSendOnMail;
 use Illuminate\Http\Request;
 
 use App\Models\Contact;
 use App\Models\Feedback;
+use Illuminate\Support\Facades\Mail;
 
 
 class ContactController extends Controller
@@ -30,20 +32,24 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
+        $details = [
+            'title' => 'Mail from ItSolutionStuff.com',
+            'body' => 'This is for testing email using smtp'
+        ];
 
         Feedback::create($request->all());
 
+        //Mail::to('dito.gulua03@gmail.com')->send(new FeedbackSendOnMail($request->all()));
 
-//        \Mail::send('mail', array(
-//            'name' => $request->get('name'),
-//            'email' => $request->get('email'),
-//            'subject' => $request->get('subject'),
-//            'user_query' => $request->get('message'),
-//        ), function($message) use ($request){
-//            $message->from($request->email);
-//            $message->to('dito.gulua03@gmail.com', 'Admin')->subject($request->get('subject'));
-//        });
-
+        Mail::send('welcome', array(
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'subject' => $request->get('subject'),
+            'user_query' => $request->get('message'),
+        ), function($message) use ($request){
+            $message->from($request->email);
+            $message->to('dimitri.gulua@geolab.edu.ge', 'Admin')->subject($request->get('subject'));
+        });
 
         return back()->with('success', 'წერილი წარმატებით გაიგზავნა.');
     }

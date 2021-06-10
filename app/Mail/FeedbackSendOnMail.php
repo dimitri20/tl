@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class feedback extends Mailable
+class FeedbackSendOnMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -28,6 +28,7 @@ class feedback extends Mailable
      */
     public function build()
     {
-        return $this->view('contact');
+        return $this->from('dimitri.gulua@geolab.edu.ge')
+                    ->view('welcome');
     }
 }
