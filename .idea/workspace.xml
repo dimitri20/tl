@@ -20,21 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81a3cc88-d402-403b-9650-a833b7251546" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ServicesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ServicesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Orchid/Resources/ContactResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Orchid/Resources/ContactResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_06_02_040801_create_contact_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_06_02_040801_create_contact_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/services/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services/show.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +179,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -237,6 +228,7 @@
       <workItem from="1623244095777" duration="5028000" />
       <workItem from="1623253096895" duration="10806000" />
       <workItem from="1623310773055" duration="7313000" />
+      <workItem from="1623703235056" duration="4640000" />
     </task>
     <servers />
   </component>
@@ -256,6 +248,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="452" y="95" width="1016" height="909" key="#Intentions" timestamp="1623704403842">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="95" width="1016" height="909" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1623704403842" />
+    <state x="654" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1623355502566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="654" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623355502566" />
     <state x="624" y="216" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1623258275716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -280,10 +280,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1865" height="236" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1623233647371" />
-    <state x="393" y="86" width="1296" height="883" key="SettingsEditor" timestamp="1623244640977">
+    <state x="393" y="86" width="1296" height="883" key="SettingsEditor" timestamp="1623704316558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="393" y="86" width="1296" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623244640977" />
+    <state x="393" y="86" width="1296" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1623704316558" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1623222700345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,13 +296,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="662" y="289" width="621" height="514" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1623217506550" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1623322501873">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1623705535670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623322501873" />
-    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1623323467230">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623705535670" />
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup" timestamp="1623707090654">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623323467230" />
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1623707090654" />
   </component>
 </project>

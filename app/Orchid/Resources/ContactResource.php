@@ -46,7 +46,7 @@ class ContactResource extends Resource
 //                ->title('Contact Name ')
 //                ->placeholder('Contact Name'),
 
-            Select::make('language')
+            Select::make('contact_name')
                 ->required()
                 ->options([
                     'mail'   => 'mail',

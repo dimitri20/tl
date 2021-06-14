@@ -22,9 +22,12 @@
                             alt="">
 
                         <a
-                            href="/services/{{ $services[3*$i+$j]['id'] }}"
+                            @if(!empty($services[3*$i+$j]['id']))
+                                href="{{ route('services.id', ['id'=>$services[3*$i+$j]['id'], 'language' => app()->getLocale()]) }}"
+                            @else
+                                href="#"
+                            @endif
                             class="service-a-tag text-decoration-none text-center">
-
                             <p class="text-center">{{ $services[3*$i+$j]['title'] }}</p>
                         </a>
                     </div>
@@ -37,7 +40,18 @@
                     <div class="col-lg-4 col-md-12 mb-4 service-container">
 
                         <img src="{{ asset(substr($services[3*(floor(sizeof($services)/3))+$j]['image_path'], 1)) }}" alt="">
-                        <a href="{{ route('services.id', ['id'=>$services[3*(floor(sizeof($services)/3))+$j]['id'], 'language' => app()->getLocale()]) }} " class="service-a-tag text-decoration-none text-center"><p class="text-center">{{ $services[3*(floor(sizeof($services)/3))+$j]['title'] }}</p></a>
+                        <a
+                            @if(!empty($services[3*(floor(sizeof($services)/3))+$j]['id']))
+                                href="{{ route('services.id', ['id'=>$services[3*(floor(sizeof($services)/3))+$j]['id'], 'language' => app()->getLocale()]) }}"
+                            @else
+                                href="#"
+                            @endif
+                            class="service-a-tag text-decoration-none text-center">
+
+                            <p class="text-center">
+                                {{ $services[3*(floor(sizeof($services)/3))+$j]['title'] }}
+                            </p>
+                        </a>
 
                     </div>
                     @endfor
