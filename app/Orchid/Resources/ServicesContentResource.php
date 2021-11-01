@@ -6,7 +6,7 @@ use Orchid\Crud\Resource;
 use Orchid\Screen\TD;
 use Orchid\Screen\Sight;
 
-use Orchid\Screen\Fields\Textarea;
+use Orchid\Screen\Fields\TextArea;
 use Orchid\Screen\Fields\Relation;
 
 use Illuminate\Http\Request;
@@ -31,17 +31,17 @@ class ServicesContentResource extends Resource
     public function fields(): array
     {
         return [
-            Textarea::make('content_ka')
+            TextArea::make('content_ka')
                 ->required()
                 ->rows(10)
                 ->title('Content (Georgian)'),
 
-            Textarea::make('content_en')
+            TextArea::make('content_en')
                 ->required()
                 ->rows(10)
                 ->title('Content (English)'),
 
-            Textarea::make('content_ru')
+            TextArea::make('content_ru')
                 ->required()
                 ->rows(10)
                 ->title('Content (Russian)'),

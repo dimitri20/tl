@@ -22,9 +22,9 @@ class ServicesController extends Controller
 
         for ($i = 0; $i < sizeof($services); $i++){
             $services_localized[$i] = [
-                "title" => $services[0]['title_'.$current_lang],
-                "id" => $services[0]['id'],
-                "image_path" => $services[0]['image_path'],
+                "title" => $services[$i]['title_'.$current_lang],
+                "id" => $services[$i]['id'],
+                "image_path" => $services[$i]['image_path'],
             ];
         }
 

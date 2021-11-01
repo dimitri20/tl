@@ -13,6 +13,7 @@
                 <div id="services-title-container">
                     <h2 class="title-align-center logo-colored">{{ __('სერვისები') }}</h2>
                 </div>
+
                 @for ($i = 0; $i < floor(sizeof($services)/3); $i++)
                 <div class="row">
                     @for($j = 0; $j < 3; $j++)
