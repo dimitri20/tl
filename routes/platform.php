@@ -23,6 +23,8 @@ use Tabuna\Breadcrumbs\Trail;
 use App\Orchid\Screens\BlogControlScreen;
 use App\Orchid\Screens\PostEditScreen;
 use App\Orchid\Screens\PostListScreen;
+use App\Orchid\Screens\postScreen;
+
 /*
 |--------------------------------------------------------------------------
 | Dashboard Routes
@@ -113,4 +115,3 @@ Route::screen('example-cards', ExampleCardsScreen::class)->name('platform.exampl
 Route::screen('example-advanced', ExampleFieldsAdvancedScreen::class)->name('platform.example.advanced');
 
 //Route::screen('idea', 'Idea::class','platform.screens.idea');
-

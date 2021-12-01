@@ -21,6 +21,13 @@
                     {!! $post['content'] !!}
                 </div>
 
+                <div style="margin-top: 20px;" class="text-main-formatting">
+                    @foreach ($files as $file)
+                        <p>
+                            <a href="{{ URL::to('/').'/storage/'.$file->path.$file->name.'.'.$file->extension }}" download>{{ $file->original_name }}</a>
+                        </p>
+                    @endforeach
+                </div>
             </div>
         </div>
     </div>

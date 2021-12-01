@@ -27,6 +27,7 @@ class Post extends Model
         'slug_ru',
         'title_ru',
         'content_ru',
-        'image_path'
+        'image_path',
+        'files'
     ];
 }

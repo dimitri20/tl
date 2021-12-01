@@ -8,7 +8,7 @@
     src: url("/fonts/bpg_glaho.ttf");
 }
 
-body{
+body {
     position: relative;
     overflow-x: hidden;
 }
@@ -17,6 +17,7 @@ li.nav-item.lang-menu-item {
     border-bottom: solid 2px #fff;
     margin: 0 15px;
 }
+
 .header-text-container h3 {
     font-size: 20px;
     font-weight: 100;
@@ -24,7 +25,7 @@ li.nav-item.lang-menu-item {
     line-height: 2em;
 }
 
-.back{
+.back {
     display: inline-block;
     /* background: #000; */
     width: 40px;
@@ -34,25 +35,24 @@ li.nav-item.lang-menu-item {
     left: 0;
 }
 
-.logo-colored{
+.logo-colored {
     color: #ef7a5c!important;
 }
 
-.section-inner-container{
+.section-inner-container {
     position: relative;
 }
 
-.service-image{
+.service-image {
     width: 600px;
     margin: 0 auto;
 }
 
-
-.service-items{
+.service-items {
     margin-top: 50px;
 }
-.service-items li {
 
+.service-items li {
     border-left: 10px solid #ef7a5c;
     margin: 10px;
     padding: 5px;
@@ -60,27 +60,27 @@ li.nav-item.lang-menu-item {
     transition: .5s;
 }
 
-.service-items li:hover{
-    background:#ef7a5c;
-    cursor:pointer;
-    color:#fff
+.service-items li:hover {
+    background: #ef7a5c;
+    cursor: pointer;
+    color: #fff
 }
 
-img{
+img {
     width: 100%;
 }
 
-.post-image{
+.post-image {
     -o-object-fit: cover;
     object-fit: cover;
     /* width: 100%; */
     -o-object-position: 50% 10%;
     object-position: 50% 10%;
-    height: 400px;
+    height: 300px;
     /* min-width: 400px; */
 }
 
-.contact-a{
+.contact-a {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -88,13 +88,12 @@ img{
     text-transform: uppercase;
 }
 
-
 #header {
     min-height: 100vh;
     height: auto;
 }
 
-#header-main-carousel{
+#header-main-carousel {
     position: absolute;
     top: 0;
     z-index: -2;
@@ -102,16 +101,13 @@ img{
     width: 100vw;
 }
 
-.person-container{
+.person-container {
     text-align: center;
 }
 
 .person-container img {
     /* width: auto;
     max-height: 275px; */
-
-
-
     width: 200px;
     /* height: auto; */
     height: 300px;
@@ -119,13 +115,14 @@ img{
     object-fit: cover;
 }
 
-.person-container h4, .person-container p{
+.person-container h4,
+.person-container p {
     margin: 15px 0;
     color: #000000;
 }
 
-.carousel-linear-gradient{
-    background-image: linear-gradient( rgba(0,0,0,0.9), rgba(0,0,0,0.7) );
+.carousel-linear-gradient {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
     width: 100%;
     height: 100%;
     position: fixed;
@@ -135,62 +132,62 @@ img{
     /* position: fixed; */
 }
 
-.carousel-inner{
+.carousel-inner {
     min-height: 800px;
     height: 100%;
     position: fixed;
 }
 
-.carousel-item{
+.carousel-item {
     height: 100%;
 }
 
-.nav-link{
+.nav-link {
     font-size: 18px;
     color: #d8d8d8!important;
     text-transform: uppercase;
-    font-family: bpg_nino_mtavruli_normal,Arial,Tahoma,sans-serif;
+    font-family: bpg_nino_mtavruli_normal, Arial, Tahoma, sans-serif;
     font-weight: bold;
     transition: all .3s ease-in-out;
 }
 
-.nav-item{
+.nav-item {
     /* border-bottom: solid 2px #fff; */
     margin: 0 10px;
 }
 
 .active {
-    color:#ef7a5c!important;
+    color: #ef7a5c!important;
 }
 
-.nav-link:hover{
-    color:#ef7a5c!important;
+.nav-link:hover {
+    color: #ef7a5c!important;
 }
-.main-nav-container{
+
+.main-nav-container {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
 }
 
-#logo{
+#logo {
     display: inline-block;
     padding: 0;
     margin-left: 75px;
     width: 250px;
 }
 
-.appearing-text-container{
+.appearing-text-container {
     /* padding-top: 30px; */
     vertical-align: middle;
     /* margin: 0 auto; */
 }
 
-.hyphen img{
+.hyphen img {
     width: 20px;
 }
 
-.hyphen{
-
+.hyphen {
     vertical-align: text-bottom;
     padding-right: 10px;
 }
@@ -202,45 +199,47 @@ img{
     padding: 10px;
 }
 
-.header-text-container{
+.header-text-container {
     margin-top: 30px;
     padding-left: 75px;
     color: #fff;
     font-family: bpg_nino_mtavruli_normal;
 }
 
-.header-top-text{
+.header-top-text {
     font-size: 60px;
     font-weight: bold;
     color: #fff;
 }
 
-.main-logo-container{
+.main-logo-container {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
 }
 
-.lang-menu{
+.lang-menu {
     position: absolute;
     margin-top: 18px;
     right: -170px;
 }
-.lang-menu-item{
+
+.lang-menu-item {
     transition: all .3s ease-in-out;
     position: relative;
 }
-.lang-menu-item:hover{
+
+.lang-menu-item:hover {
     border-bottom-color: #ef7a5c!important;
 }
 
-.lang-menu-link img{
+.lang-menu-link img {
     width: 20px;
     height: 20px;
 }
 
-.lang-menu-text{
-    font-family: bpg_nino_mtavruli_normal,Arial,Tahoma,sans-serif;
+.lang-menu-text {
+    font-family: bpg_nino_mtavruli_normal, Arial, Tahoma, sans-serif;
     font-weight: bold;
     position: absolute;
     top: 27px;
@@ -249,11 +248,12 @@ img{
     right: -2px;
     transition: all .3s ease-in-out;
 }
-.lang-menu-text:hover{
-    color:#ef7a5c;
+
+.lang-menu-text:hover {
+    color: #ef7a5c;
 }
 
-#main-navbar-toggler{
+#main-navbar-toggler {
     display: none;
     width: 50px;
     background-color: transparent;
@@ -263,7 +263,9 @@ img{
     top: 47px;
 }
 
+
 /* amis zemot sul header iyo */
+
 
 /* ##############
 ###########
@@ -271,67 +273,65 @@ img{
 ##########
 ########### */
 
-
-
-.section-outer-container{
+.section-outer-container {
     width: 100vw;
     padding: 80px 0px;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-#services{
+#services {
     width: 100%;
-
 }
 
-.service-a-tag{
-    color:#ef7a5c;
-    font-size: 20px;
+.service-a-tag {
+    color: #ef7a5c;
+    font-size: 16px;
     font-family: 'bpg_nino_mtavruli_normal';
     font-weight: 700;
 }
 
-.service-a-tag:hover{
+.service-a-tag:hover {
     text-decoration: underline;
     color: #ef7a5c;
 }
 
-.service-a-tag p:hover{
+.service-a-tag p:hover {
     text-decoration: underline;
 }
 
-.section-inner-container{
+.section-inner-container {
     padding: 10px;
     width: 85%;
     margin: auto;
 }
 
-
-.person-container{
+.person-container {
     padding: 0 30px;
 }
-.service-container img{
-    width: 100%;
-    max-height: 100%;
+
+.service-container img {
+    width: 320px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
     padding-bottom: 10px;
 }
 
-.services_outer_container .row{
+.services_outer_container .row {
     margin: 20px 0;
 }
 
-.section-right-hand-items-outer-container{
-
+.section-right-hand-items-outer-container {
     width: 48%;
 }
 
-#send-message-section{
+#send-message-section {
     background-color: rgba(227, 229, 232, 0.98);
     color: #576173;
     font-family: 'bpg_nino_mtavruli_normal';
 }
 
-.send-us-message-headers{
+.send-us-message-headers {
     padding: 15px 0;
     font-family: 'bpg_nino_mtavruli_normal';
     color: #000000;
@@ -345,42 +345,46 @@ img{
     color: #000000;
 }
 
-#contact-info-left-side h3{
+#contact-info-left-side h3 {
     font-family: 'bpg_nino_mtavruli_normal';
     color: #000000;
     font-weight: 700;
 }
 
-#contact-info-left-side{
+#contact-info-left-side {
     padding: 0 25px;
 }
 
-#contact-info-right-side-image{
+#contact-info-right-side-image {
     padding: 30px 25px;
 }
-#contact-info-right-side-image img{
+
+#contact-info-right-side-image img {
     width: 110px;
     height: auto;
 }
 
-#services-right-hand-items-container{
+#services-right-hand-items-container {
     background-color: #fff;
     padding: 25px 10px;
     border-top: solid 5px #ef7a5c;
     border-bottom: solid 5px #ef7a5c;
 }
 
+
 /* #services-right-hand-items-outer-container div div{
     margin: 10px 0;
 } */
 
-.services-right-hand-image-container{
+.services-right-hand-image-container {
     display: inline-block;
 }
-.services-right-hand-image-container img{
+
+.services-right-hand-image-container img {
     width: 70px;
     margin-top: -19px;
 }
+
 .services-right-hand-text-container {
     display: inline-block;
     margin-left: 30px;
@@ -393,11 +397,11 @@ img{
     font-family: 'bpg_nino_mtavruli_normal';
 }
 
-.services-right-hand-item{
+.services-right-hand-item {
     margin: 40px 0;
 }
 
-.services-title{
+.services-title {
     color: #576173;
     font-weight: 600;
     font-size: 42px;
@@ -405,12 +409,12 @@ img{
     /* padding: 0 20px; */
 }
 
-.services-left-hand-items-container{
+.services-left-hand-items-container {
     padding: 0 30px;
     width: 48%;
 }
 
-.services-left-hand-text{
+.services-left-hand-text {
     color: #576173;
     font-weight: 300;
     font-size: 23px;
@@ -418,18 +422,19 @@ img{
     display: block;
 }
 
-#services-title-container{
+#services-title-container {
     margin-bottom: 80px;
 }
 
-.text-main-formatting{
+.text-main-formatting {
     color: #000000;
     text-align: justify;
     font-size: 20px;
     font-family: 'bpg_glaho';
+    overflow-wrap: break-word;
 }
 
-.section-button{
+.section-button {
     background-color: #576173;
     padding: 10px 20px;
     margin-top: 20px;
@@ -442,26 +447,26 @@ amis zemot sul services iyo
 ####################################
 #################################### */
 
-#bottom-contact-outer-container{
+#bottom-contact-outer-container {
     margin: 200px 0;
 }
 
-#bottom-contact-inner-container{
+#bottom-contact-inner-container {
     margin: auto;
     width: 80%;
     color: white;
     font-size: 25px;
     font-weight: 900;
     font-family: 'bpg_nino_mtavruli_normal';
-
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     padding: 50px;
 }
 
-.bottom-contact-p{
+.bottom-contact-p {
     width: 100%;
     text-align: center;
 }
+
 
 /*
 
@@ -471,22 +476,21 @@ amis qvemot footer iqneba
 #################
 */
 
-
-#footer{
-    width:100vw;
+#footer {
+    width: 100vw;
     height: 60px;
-    background-color:#060c17;
+    background-color: #060c17;
     position: relative;
 }
 
-#footer-content{
-    width:-webkit-fit-content;
-    width:-moz-fit-content;
-    width:fit-content;
+#footer-content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     color: white;
     text-align: center;
     font-size: 13px;
-    font-family:'bpg_nino_mtavruli_normal';
+    font-family: 'bpg_nino_mtavruli_normal';
     font-weight: 800;
     align-items: center;
     margin: 0;
@@ -500,12 +504,12 @@ amis qvemot footer iqneba
     color: #acacac;
 }
 
-.social-icon img{
+.social-icon img {
     width: 25px;
     height: 25px;
 }
 
-.social-icon{
+.social-icon {
     margin-right: 5px;
 }
 
@@ -534,9 +538,7 @@ zogadi
 
 */
 
-
-
-.title-align-center{
+.title-align-center {
     color: #ef7a5c;
     font-weight: 600;
     font-size: 42px;
@@ -549,12 +551,9 @@ a.nav-link {
     font-size: 20px;
 }
 
-
-#mailto{
-    background-color: rgba(43,49,55,.9);
-
+#mailto {
+    background-color: rgba(43, 49, 55, .9);
 }
-
 
 
 /*
@@ -581,29 +580,25 @@ responsivee
 
 */
 
-
-@media screen and (min-width:0px){
-    header{
+@media screen and (min-width:0px) {
+    header {
         height: 100vh;
     }
-    #logo{
+    #logo {
         margin-left: 0px;
         width: 150px;
     }
-    .title-align-center{
+    .title-align-center {
         font-size: 30px;
     }
-
-    #main-navbar-toggler{
+    #main-navbar-toggler {
         display: inline-block;
     }
-
-    .header-text-container{
+    .header-text-container {
         margin-top: 90px;
         padding-left: 0;
     }
-
-    .carousel-inner img{
+    .carousel-inner img {
         height: 100%;
         /* padding-left: 36px; */
         min-width: 100vw;
@@ -613,44 +608,36 @@ responsivee
         object-position: 56% 40%;
         width: auto;
     }
-
-    .services-flex-container{
+    .services-flex-container {
         flex-direction: column;
     }
-
-    .section-right-hand-items-outer-container{
+    .section-right-hand-items-outer-container {
         width: 100%;
     }
-
-    .services-right-hand-item div{
+    .services-right-hand-item div {
         display: block;
         margin: auto;
         text-align: center;
         font-size: 18px;
         margin-top: 20px;
     }
-
     .services-right-hand-text-container a {
         font-size: 18px;
     }
-
     .services-left-hand-items-container {
         width: 100%;
         margin-top: 50px;
     }
-
-    .services-left-hand-text{
+    .services-left-hand-text {
         font-size: 16px;
     }
-
-    #bottom-contact-inner-container{
+    #bottom-contact-inner-container {
         padding: 50px 10px;
     }
-    .bottom-contact-p{
+    .bottom-contact-p {
         font-size: 16px;
     }
-
-    .main-nav-background{
+    .main-nav-background {
         background-color: #efefef;
         position: absolute;
         top: 0;
@@ -659,47 +646,38 @@ responsivee
         height: 150px;
         z-index: -1;
     }
-
-    .nav-link{
+    .nav-link {
         color: #000!important;
     }
-
     .nav-item {
         border: none;
     }
-
-    #main-navbar{
+    #main-navbar {
         transition: all .3s ease-in-out;
     }
-
-    #main-navbar{
+    #main-navbar {
         background-color: #efefef!important;
         padding: 30px;
     }
-
-    .lang-menu{
+    .lang-menu {
         position: initial;
     }
-
     .lang-menu-text {
         color: #000;
     }
-
-    .carousel-control-prev, .carousel-control-next{
+    .carousel-control-prev,
+    .carousel-control-next {
         display: none;
     }
-    .contact-info-left-side-wrapper{
+    .contact-info-left-side-wrapper {
         flex-wrap: wrap;
     }
-
     .active {
         color: #ef7a5c!important;
     }
-
-    .header-top-text{
+    .header-top-text {
         font-size: 30px;
     }
-
     .header-top-text h3 {
         font-size: 20px;
     }
@@ -708,11 +686,13 @@ responsivee
         opacity: 0;
         transition: opacity 2s;
     }
-
-    .service-image{
+    .service-image {
         width: 200px;
     }
-
+    .service-container,
+    .service-container img {
+        width: 280px;
+    }
 }
 
 
@@ -740,58 +720,47 @@ responsivee
 
 */
 
-
-
-@media screen and (min-width:426px){
-
-
-    .services-flex-container{
+@media screen and (min-width:426px) {
+    .services-flex-container {
         flex-direction: row;
     }
-
-    #main-navbar{
+    #main-navbar {
         padding: 0;
         padding-bottom: 25px;
     }
-
-    .section-right-hand-items-outer-container{
+    .section-right-hand-items-outer-container {
         width: 50%;
     }
-
-
     .services-right-hand-text-container a {
         font-size: 18px;
     }
-
     .services-left-hand-items-container {
         width: 50%;
         margin-top: 0px;
     }
-
-    .services-left-hand-text{
+    .services-left-hand-text {
         font-size: 20px;
     }
-
-    #bottom-contact-inner-container{
+    #bottom-contact-inner-container {
         padding: 50px 10px;
     }
-    .bottom-contact-p{
+    .bottom-contact-p {
         font-size: 20px;
     }
-    .contact-info-left-side-wrapper{
+    .contact-info-left-side-wrapper {
         flex-wrap: nowrap;
     }
     .active {
         color: #ef7a5c!important;
     }
-
-    .service-image{
+    .service-image {
         width: 300px;
     }
-
-
+    .service-container,
+    .service-container img {
+        width: 220px;
+    }
 }
-
 
 
 /*
@@ -818,60 +787,47 @@ responsivee
 
 */
 
-
-
-@media screen and (min-width: 992px){
-    .main-nav-background{
-        display:none;
+@media screen and (min-width: 992px) {
+    .main-nav-background {
+        display: none;
     }
-
-    #main-navbar{
+    #main-navbar {
         background-color: transparent !important;
     }
-
     .header-text-container {
         margin-top: 30px;
         padding-left: 75px;
     }
-
-    .nav-link{
+    .nav-link {
         color: #fff!important;
     }
-    .lang-menu-text{
+    .lang-menu-text {
         color: #d8d8d8!important;
     }
-
-    #main-navbar-toggler{
+    #main-navbar-toggler {
         display: none;
     }
-
-    .nav-item{
+    .nav-item {
         /* border-bottom: solid 2px #fff; */
         margin: 0 25px;
     }
-
-    #logo{
+    #logo {
         width: 150px;
         margin-left: 70px;
     }
     .active {
         color: #ef7a5c!important;
     }
-
-
     .services-left-hand-items-container {
         width: 50%;
         margin-top: 0px;
     }
-
     .section-right-hand-items-outer-container {
         width: 50%;
     }
-
     .services-flex-container {
         flex-direction: row;
     }
-
     .services-right-hand-item div {
         display: inline-block;
         margin-right: 30px;
@@ -879,49 +835,38 @@ responsivee
         font-size: 18px;
         margin-top: 20px;
     }
-
-    .section-inner-container{
+    .section-inner-container {
         width: 100%;
     }
-
     .services-left-hand-text {
         font-size: 20px;
     }
-
     .bottom-contact-p {
         font-size: 20px;
     }
-
-    .lang-menu{
+    .lang-menu {
         position: absolute;
         right: -30px;
         top: -100px;
     }
-
     .carousel-item img {
         height: 100%;
         min-width: 100%;
     }
-
-    .header-top-text{
+    .header-top-text {
         font-size: 60px;
         letter-spacing: 0.2em;
         /* font-weight: bold; */
     }
-
     .appearing-text-container p {
         font-size: 18px;
     }
-    .service-image{
+    .service-image {
         width: 600px;
     }
-
     .header-text-container h3 {
         font-size: 37px;
-
     }
-
-
 }
 
 
@@ -949,38 +894,30 @@ responsivee
 
 */
 
-
-@media screen and (min-width: 1200px){
-
+@media screen and (min-width: 1200px) {
     .lang-menu {
         /* float: right; */
         right: -6em;
         top: -115px;
     }
-
-    #logo{
+    #logo {
         width: 250px;
     }
     a.nav-link {
         font-size: 18px;
     }
-
     .section-inner-container {
         width: 95%;
     }
-
-    .services-right-hand-text-container a{
+    .services-right-hand-text-container a {
         font-size: 22px;
     }
-
     .services-left-hand-text {
         font-size: 23px;
     }
-
     .bottom-contact-p {
         font-size: 23px;
     }
-
     .active {
         color: #ef7a5c!important;
     }
@@ -1011,16 +948,13 @@ responsivee
 
 */
 
-
-@media screen and (min-width:1400px){
+@media screen and (min-width:1400px) {
     .carousel-item img {
         width: 100%;
     }
-
-    .title-align-center{
+    .title-align-center {
         font-size: 42px;
     }
-
     .section-inner-container {
         width: 82%;
     }
@@ -1055,10 +989,6 @@ responsivee
 */
 
 
-
-
-
-
 /*
 
 #######################################################################
@@ -1084,10 +1014,6 @@ responsivee
 */
 
 
-
-
-
-
 /*
 
 #######################################################################
@@ -1111,19 +1037,3 @@ responsivee
 #######################################################################
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

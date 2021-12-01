@@ -15,6 +15,8 @@ use Orchid\Screen\Sight;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Post;
+use Orchid\Screen\Fields\Upload;
+
 
 class PostResource extends Resource
 {
@@ -32,6 +34,7 @@ class PostResource extends Resource
      */
     public function fields(): array
     {
+
         return [
             Input::make('title_ka')
                 ->required()
@@ -89,6 +92,12 @@ class PostResource extends Resource
                 ->width(400)
                 ->height(400)
                 ->targetRelativeUrl(),
+
+            Upload::make('files')
+                ->groups("files")
+                ->maxFiles(10)
+                ->parallelUploads(2)
+
         ];
     }
 

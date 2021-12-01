@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Models\Post;
+use Illuminate\Support\Facades\URL;
 use App;
 
 class BlogController extends Controller
@@ -28,8 +30,8 @@ class BlogController extends Controller
 
     public function show($lang, $id)
     {
-        $post = Post::where('id', $id)->get()->toArray();
 
+        $post = Post::where('id', $id)->get()->toArray();
         if(sizeof($post) == 0)
         {
 
@@ -38,8 +40,6 @@ class BlogController extends Controller
         }
         else
         {
-            $posts_localized = array();
-
             $post_localized = [
                 "id" => $post[0]['id'],
                 "slug" => $post[0]['slug_'.App::currentLocale()],
@@ -48,8 +48,17 @@ class BlogController extends Controller
                 "image_path" => $post[0]["image_path"],
             ];
 
+            $post = Post::where('id', $id)->first();
+            $attachment_ids = json_decode($post->files);
+            $files = [];
+            foreach($attachment_ids as $id){
+                $tmp = DB::table('attachments')->where('id', $id)->first();
+                array_push($files, $tmp);
+            }
+
             return view('blog.show')
-                        ->with('post', $post_localized);
+                        ->with('post', $post_localized)
+                        ->with('files', $files);
         }
 
     }

@@ -25,6 +25,7 @@ class CreatePostsTable extends Migration
             $table->string('slug_ru');
             $table->longText('content_ru');
             $table->string('image_path');
+            $table->string('files')->nullable();
             $table->timestamps();
         });
     }
