@@ -11,14 +11,16 @@ class feedback extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $emails;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($emails)
     {
-        //
+        $this->emails = $emails;
     }
 
     /**

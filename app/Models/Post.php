@@ -13,6 +13,7 @@ class Post extends Model
 {
     use HasFactory, AsSource, Filterable, Attachable;
 
+
     protected $table = 'posts';
 
     protected $primaryKey = 'id';

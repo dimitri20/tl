@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\feedback;
 use Illuminate\Http\Request;
 
 use App\Models\Contact;
-use App\Models\Feedback;
+use Illuminate\Support\Facades\Mail;
+
 
 
 class ContactController extends Controller
@@ -30,20 +32,14 @@ class ContactController extends Controller
             'message' => 'required',
         ]);
 
+        $feedback = [
+            "name" => $request->name,
+            "email" => $request->email,
+            "subject" => $request->subject,
+            "message" => $request->message
+        ];
 
-        Feedback::create($request->all());
-
-
-//        \Mail::send('mail', array(
-//            'name' => $request->get('name'),
-//            'email' => $request->get('email'),
-//            'subject' => $request->get('subject'),
-//            'user_query' => $request->get('message'),
-//        ), function($message) use ($request){
-//            $message->from($request->email);
-//            $message->to('dito.gulua03@gmail.com', 'Admin')->subject($request->get('subject'));
-//        });
-
+        Mail::to($request->email)->send(new feedback($feedback));
 
         return back()->with('success', 'წერილი წარმატებით გაიგზავნა.');
     }

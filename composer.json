@@ -15,7 +15,8 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "orchid/crud": "^3.0",
-        "orchid/platform": "^10.5"
+        "orchid/platform": "^10.5",
+        "tcg/voyager": "^1.5"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

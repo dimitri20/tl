@@ -31,6 +31,9 @@ Route::get('/test', function(){
 Route::redirect('/', '/ka');
 
 
+
+
+
 Route::group(['prefix' => '{language}'], function(){
     Route::get('/', [HomeController::class, 'index'])->name('/')->middleware([Localization::class]);
 
@@ -49,5 +52,7 @@ Route::group(['prefix' => '{language}'], function(){
     Route::get('/services/{id}', [ServicesController::class, 'show'])->name('services.id')->where('id', '[0-9]+');
 
 });
+
+
 
 

@@ -115,3 +115,5 @@ Route::screen('example-cards', ExampleCardsScreen::class)->name('platform.exampl
 Route::screen('example-advanced', ExampleFieldsAdvancedScreen::class)->name('platform.example.advanced');
 
 //Route::screen('idea', 'Idea::class','platform.screens.idea');
+// Route::screen('/posts', postScreen::class)->name('platform.posts');
+Route::screen('/posts/{id}', postScreen::class)->name('platform.posts');

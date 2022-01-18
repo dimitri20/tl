@@ -15,8 +15,10 @@ use Orchid\Screen\Sight;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Post;
+use App\Orchid\Screens\postScreen;
+use Orchid\Screen\Builder;
 use Orchid\Screen\Fields\Upload;
-
+use Orchid\Support\Facades\Layout;
 
 class PostResource extends Resource
 {
@@ -27,6 +29,7 @@ class PostResource extends Resource
      */
     public static $model = Post::class;
 
+
     /**
      * Get the fields displayed by the resource.
      *
@@ -34,7 +37,6 @@ class PostResource extends Resource
      */
     public function fields(): array
     {
-
         return [
             Input::make('title_ka')
                 ->required()
@@ -99,7 +101,21 @@ class PostResource extends Resource
                 ->parallelUploads(2)
 
         ];
+
     }
+
+    /**
+     * Get relationships that should be eager loaded when performing an index query.
+     *
+     * @return array
+     */
+    public function with(): array
+    {
+        return [];
+    }
+
+
+
 
     /**
      * Get the columns displayed by the resource.
@@ -161,6 +177,16 @@ class PostResource extends Resource
                 return html_entity_decode($content['content_ru']);
             }),
         ];
+    }
+
+        /**
+     * Get the validation rules that apply to save/update.
+     *
+     * @return array
+     */
+    public function rules(Model $model): array
+    {
+        return [];
     }
 
 

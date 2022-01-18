@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Orchid\Platform\Models\User as Authenticatable;
 
-class User extends Authenticatable
+
+class User extends \TCG\Voyager\Models\User
 {
     /**
      * The attributes that are mass assignable.
