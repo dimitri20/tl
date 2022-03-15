@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::post('deleteFile', [\App\Http\Controllers\Admin\PostsController::class, 'deleteFile'])->name("deleteFile");
+Route::post('updatePostFileIds', [\App\Http\Controllers\Admin\PostsController::class, 'updatePostFileIds'])->name("updatePostFileIds");
+
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });

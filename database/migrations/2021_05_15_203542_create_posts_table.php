@@ -17,13 +17,13 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->string('title_ka');
             $table->string('slug_ka');
-            $table->longText('content_ka');
+            $table->longText('content_ka')->nullable();
             $table->string('title_en');
             $table->string('slug_en');
-            $table->longText('content_en');
+            $table->longText('content_en')->nullable();
             $table->string('title_ru');
             $table->string('slug_ru');
-            $table->longText('content_ru');
+            $table->longText('content_ru')->nullable();
             $table->string('image_path');
             $table->string('files')->nullable();
             $table->timestamps();

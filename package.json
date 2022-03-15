@@ -10,9 +10,22 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
+        "axios": "^0.21.4",
+        "laravel-mix": "^6.0.43",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14"
+        "postcss": "^8.3.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.49.9"
+    },
+    "dependencies": {
+        "@popperjs/core": "^2.11.3",
+        "admin-lte": "^3.2.0",
+        "bootstrap-icons": "^1.8.1",
+        "font-awesome": "^4.7.0",
+        "formstone": "^1.4.22",
+        "froala-editor": "^4.0.9",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1",
+        "sass-loader": "^12.6.0"
     }
 }

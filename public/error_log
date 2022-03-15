@@ -1,0 +1,300 @@
+[01-Dec-2021 19:09:06 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:06 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:07 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:07 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:08 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:09 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:11 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:11 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:11 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:11 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:12 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:12 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:13 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:13 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:26 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:09:26 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:10:53 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:10:53 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:14:31 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:14:31 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:14:32 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:14:32 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:14:39 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:14:39 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:38 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:38 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:43 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:43 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:44 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:44 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:45 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:45 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:45 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:16:45 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:21:50 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:21:50 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:18 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:18 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:19 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:19 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:19 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:19 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:20 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:20 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:20 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:20 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:20 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:20 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:21 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:21 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:44 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:44 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:54 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:54 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:55 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:22:55 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:08 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:08 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:09 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:09 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:10 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:10 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:25 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:25 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:44 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:44 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:45 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:45 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:45 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:45 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:45 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:25:45 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:26:34 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:26:34 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:28:17 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:28:17 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:32:59 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:32:59 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:33:32 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/public_html/../tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 19:33:32 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/public_html/../tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/public_html/index.php on line 34
+[01-Dec-2021 22:01:47 Asia/Tbilisi] PHP Warning:  symlink(): No such file or directory in /home/tlcomge/public_html/symCreate.php on line 5
+[01-Dec-2021 22:07:00 Asia/Tbilisi] PHP Warning:  symlink(): No such file or directory in /home/tlcomge/public_html/symCreate.php on line 5
+[01-Dec-2021 22:10:05 Asia/Tbilisi] PHP Warning:  symlink(): File exists in /home/tlcomge/public_html/symCreate.php on line 5
+[01-Dec-2021 22:43:10 Asia/Tbilisi] PHP Warning:  symlink(): File exists in /home/tlcomge/public_html/symCreate.php on line 5
+[01-Dec-2021 22:44:34 Asia/Tbilisi] PHP Warning:  symlink(): No such file or directory in /home/tlcomge/public_html/symCreate.php on line 5
+[01-Dec-2021 22:45:17 Asia/Tbilisi] PHP Warning:  symlink(): No such file or directory in /home/tlcomge/public_html/symCreate.php on line 5
+[19-Jan-2022 01:45:04 Asia/Tbilisi] PHP Warning:  include(/home/tlcomge/tl/vendor/composer/../../app/Http/Kernel.php): Failed to open stream: No such file or directory in /home/tlcomge/tl/vendor/composer/ClassLoader.php on line 444
+[19-Jan-2022 01:45:04 Asia/Tbilisi] PHP Warning:  include(): Failed opening '/home/tlcomge/tl/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/tl/vendor/composer/ClassLoader.php on line 444
+[19-Jan-2022 01:45:04 Asia/Tbilisi] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php:836
+Stack trace:
+#0 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(836): ReflectionClass->__construct()
+#1 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(717): Illuminate\Container\Container->build()
+#2 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#3 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(287): Illuminate\Foundation\Application->resolve()
+#4 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#5 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(717): Illuminate\Container\Container->build()
+#6 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#7 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(655): Illuminate\Foundation\Application->resolve()
+#8 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make()
+#9 /home/tlcomge/public_html/index.php(50): Illuminate\Foundation\Application->make()
+#10 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php:838
+Stack trace:
+#0 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(717): Illuminate\Container\Container->build()
+#1 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#2 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(287): Illuminate\Foundation\Application->resolve()
+#3 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(832): Illuminate\Container\Container->Illuminate\Container\{closure}()
+#4 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(717): Illuminate\Container\Container->build()
+#5 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#6 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php(655): Illuminate\Foundation\Application->resolve()
+#7 /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make()
+#8 /home/tlcomge/public_html/index.php(50): Illuminate\Foundation\Application->make()
+#9 {main}
+  thrown in /home/tlcomge/tl/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 838

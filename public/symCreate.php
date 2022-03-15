@@ -1,6 +1,6 @@
 <?php
-$targetFolder = '/home/tllaw.site7.ge/tl/storage/app/public';
-$linkFolder = '/home/tllaw.site7.ge/public_html/public/storage';
+$targetFolder = '/home/tlcomge/tl/storage/app/public';
+$linkFolder = '/home/tlcomge/public_html/storage';
 
 symlink($targetFolder,$linkFolder);
 echo 'Symlink process successfully completed';

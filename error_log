@@ -1,0 +1,27 @@
+[01-Dec-2021 15:14:26 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
+[01-Dec-2021 19:14:26 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 19:14:26 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/tl/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 15:15:35 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
+[01-Dec-2021 19:15:35 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 19:15:35 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/tl/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 15:20:55 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
+[01-Dec-2021 19:20:55 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 19:20:55 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/tl/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 15:21:44 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
+[01-Dec-2021 19:21:44 Asia/Tbilisi] PHP Warning:  require(/home/tlcomge/tl/vendor/autoload.php): Failed to open stream: No such file or directory in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 19:21:44 Asia/Tbilisi] PHP Fatal error:  Uncaught Error: Failed opening required '/home/tlcomge/tl/vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/tlcomge/tl/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/tlcomge/tl/artisan on line 18
+[01-Dec-2021 15:35:02 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
+[01-Dec-2021 15:37:22 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
+[04-Dec-2021 13:10:18 UTC] PHP Warning:  Missing arginfo for clos_ssa_test() in Unknown on line 0
