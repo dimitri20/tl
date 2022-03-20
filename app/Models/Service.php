@@ -21,4 +21,7 @@ class Service extends Model
         'services_id'
     ];
 
+    public function services(){
+        return $this->hasOne(Services::class, "id", "services_id");
+    }
 }

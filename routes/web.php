@@ -44,6 +44,8 @@ Route::group(['prefix' => 'admin/crud'], function(){
         Route::resource('contacts', \App\Http\Controllers\Admin\ContactsController::class);
         Route::resource('posts', \App\Http\Controllers\Admin\PostsController::class);
         Route::resource('services', \App\Http\Controllers\Admin\ServicesController::class);
+        Route::resource('servicesContent', \App\Http\Controllers\Admin\ServicesContentController::class);
+        Route::resource('team', \App\Http\Controllers\Admin\TeamController::class);
     });
 
 });

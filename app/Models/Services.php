@@ -22,4 +22,7 @@ class Services extends Model
         'image_path'
     ];
 
+
+
+
 }

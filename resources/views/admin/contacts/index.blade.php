@@ -9,7 +9,7 @@
             <div class="container">
                <div class="row my-4">
                   <div class="col-sm-6">
-                     <h1 class="m-0">Abouts</h1>
+                     <h1 class="m-0">Contacts</h1>
                   </div>
 
                   <div class="col-sm-6">

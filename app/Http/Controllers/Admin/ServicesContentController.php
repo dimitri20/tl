@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Services;
 use Illuminate\Http\Request;
+use App\Models\Service;
+use App\Models\Services;
 
-class ServicesController extends Controller
+class ServicesContentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,8 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        return view('admin.services.index')
-                ->with('services', Services::all());
+        return view("admin.servicesContent.index")
+                    ->with("services", Service::all());
     }
 
     /**
@@ -26,7 +27,8 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        return view("admin.services.create");
+        return view("admin.servicesContent.create")
+                    ->with("services", Services::all());
     }
 
     /**
@@ -38,23 +40,21 @@ class ServicesController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'image' => 'required',
-            'title_ka' => 'required',
-            'title_en' => 'required',
-            'title_ru' => 'required'
+            'content_ka' => 'required',
+            'content_en' => 'required',
+            'content_ru' => 'required',
+            'services_id' => 'required'
         ]);
 
-        $image_name = uniqid().'_'.$request->file('image')->getClientOriginalName();
-        $request->image->move(storage_path('app/public/service_images/'), $image_name);
 
-        Services::create([
-            'title_ka' => $request->title_ka,
-            'title_en' => $request->title_en,
-            'title_ru' => $request->title_ru,
-            'image_path' => 'service_images/'.$image_name
+        Service::create([
+            'content_ka' => $request->content_ka,
+            'content_en' => $request->content_en,
+            'content_ru' => $request->content_ru,
+            'services_id' => $request->services_id
         ]);
 
-        return redirect()->route('admin.services.index');
+        return redirect()->route('admin.servicesContent.index');
     }
 
     /**
@@ -65,10 +65,8 @@ class ServicesController extends Controller
      */
     public function show($id)
     {
-        $service = Services::where("id", $id)->first();
-
-        return view("admin.services.show")
-                    ->with("service", $service);
+        return view("admin.servicesContent.show")
+                    ->with("service", Service::where("id", $id)->first());
     }
 
     /**
@@ -102,12 +100,8 @@ class ServicesController extends Controller
      */
     public function destroy($id)
     {
-        $service = Services::where('id', $id);
-        if(file_exists(storage_path('app/public/'.$service->first()->image_path))){
-            unlink(storage_path('app/public/'.$service->first()->image_path));
-        }
-
+        $service = Service::where('id', $id);
         $service->delete();
-        return redirect()->route('admin.services.index');
+        return redirect()->route('admin.servicesContent.index');
     }
 }
