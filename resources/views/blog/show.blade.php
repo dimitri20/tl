@@ -14,7 +14,7 @@
                 <h2 class="title-align-center">{{ $post['title'] }}</h2>
 
                 <div class="service-image d-flex justify-content-center">
-                    <img src="{{ asset(substr($post['image_path'], 1)) }}" alt="" class="post-image ">
+                    <img src="{{ asset('storage/'.substr($post['image_path'], 1)) }}" alt="" class="post-image ">
                 </div>
 
                 <div style="margin-top: 20px;" class="text-main-formatting">

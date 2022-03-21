@@ -28,7 +28,7 @@
                                         <div class="col-lg-4 col-md-12 mb-4">
                                             <div class="card">
                                             <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                                <img src="{{ asset(substr($posts[3*$i+$j]['image_path'], 1)) }}" class="post-image" />
+                                                <img src="{{ asset('storage/'.substr($posts[3*$i+$j]['image_path'], 1)) }}" class="post-image" />
                                                 <a href="#">
                                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                                 </a>
@@ -55,7 +55,7 @@
                                     <div class="col-lg-4 col-md-12 mb-4">
                                         <div class="card">
                                         <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                            <img src="{{ asset(substr($posts[3*(floor(sizeof($posts)/3))+$j]['image_path'], 1)) }}" class="post-image" />
+                                            <img src="{{ asset('storage'.substr($posts[3*(floor(sizeof($posts)/3))+$j]['image_path'], 1)) }}" class="post-image" />
                                             <a href="#!">
                                             <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                                             </a>

@@ -6,12 +6,15 @@ use Illuminate\Support\Facades\App;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutUsController;
+use App\Http\Controllers\Admin\FeedbackController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Middleware\Localization;
+use App\Models\Feedback;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +35,9 @@ Route::group(['prefix' => 'admin'], function(){
         return view('admin.index');
     });
 
+    Route::name("admin.")->group(function () {
+        Route::resource('feedback', FeedbackController::class);
+    });
 });
 
 
@@ -62,23 +68,23 @@ Route::redirect('/', '/ka');
 
 
 
-// Route::group(['prefix' => '{language}'], function(){
-//     Route::get('/', [HomeController::class, 'index'])->name('/')->middleware([Localization::class]);
+Route::group(['prefix' => '{language}'], function(){
+    Route::get('/', [HomeController::class, 'index'])->name('/')->middleware([Localization::class]);
 
-//     Route::get('/about', [AboutUsController::class, 'index'])->name('about');
+    Route::get('/about', [AboutUsController::class, 'index'])->name('about');
 
-//     Route::get('/team', [TeamController::class, 'index'])->name('team');
-//     Route::get('/team/{id}', [TeamController::class, 'show'])->name('teammate')->where('id', '[0-9]+');
+    Route::get('/team', [TeamController::class, 'index'])->name('team');
+    Route::get('/team/{id}', [TeamController::class, 'show'])->name('teammate')->where('id', '[0-9]+');
 
-//     Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-//     Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.id')->where('id', '[0-9]+');
+    Route::get('/blog', [BlogController::class, 'index'])->name('blog');
+    Route::get('/blog/{id}', [BlogController::class, 'show'])->name('blog.id')->where('id', '[0-9]+');
 
-//     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-//     Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
-//     Route::get('/services', [ServicesController::class, 'index'])->name('services');
-//     Route::get('/services/{id}', [ServicesController::class, 'show'])->name('services.id')->where('id', '[0-9]+');
+    Route::get('/services', [ServicesController::class, 'index'])->name('services');
+    Route::get('/services/{id}', [ServicesController::class, 'show'])->name('services.id')->where('id', '[0-9]+');
 
 
-// });
+});
 

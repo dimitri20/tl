@@ -26,8 +26,8 @@
             <table class="table table-striped">
                 <thead>
                    <tr>
-                      <th scope="col">Contact Name</th>
-                      <th scope="col">Contact Info</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Value</th>
                       <th scope="col">Actions</th>
                    </tr>
                 </thead>
@@ -38,8 +38,15 @@
                             <th scope="row">{{ $contact->contact_name }}</th>
                             <td>{{ $contact->contact_info }}</td>
                             <td>
-                                <a href="{{route('admin.contacts.show', $about->id)}}" class="text-decoration-none"><span><i class="fa fa-eye"></i> View</span></a>
-                                <a href="" class="text-decoration-none ml-3"><span><i class="fas fa-edit"></i> Edit</span></a>
+                                <a href="{{route('admin.contacts.show', $contact->id)}}" class="text-decoration-none"><span><i class="fa fa-eye"></i> View</span></a>
+                                <form method="POST" action="{{ route("admin.contacts.destroy", $contact->id) }}" class="deletePost">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-link">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span class="ml-2">Delete</span>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

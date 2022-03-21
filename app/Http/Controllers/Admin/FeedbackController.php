@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Models\Feedback;
 
-class ContactsController extends Controller
+class FeedbackController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,8 @@ class ContactsController extends Controller
      */
     public function index()
     {
-
-        $contacts = Contact::all();
-
-        return view("admin.contacts.index")
-                    ->with("contacts", $contacts);
+        return view('admin.feedbacks.index')
+                        ->with("feedbacks", Feedback::all());
     }
 
     /**
@@ -29,7 +26,7 @@ class ContactsController extends Controller
      */
     public function create()
     {
-        return view("admin.contacts.create");
+        return abort(404);
     }
 
     /**
@@ -40,18 +37,7 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'contact_name' => 'required',
-            'contact_info' => 'required'
-        ]);
-
-
-        Contact::create([
-            'contact_name' => $request->contact_name,
-            'contact_info' => $request->contact_info
-        ]);
-
-        return redirect()->route('admin.contacts.index');
+        return abort(404);
     }
 
     /**
@@ -62,10 +48,8 @@ class ContactsController extends Controller
      */
     public function show($id)
     {
-        $contact = Contact::where("id", $id)->first();
-
-        return view("admin.contacts.show")
-                    ->with("contact", $contact);
+        return view('admin.feedbacks.show')
+                        ->with('feedback', Feedback::where('id', $id)->first());
     }
 
     /**
@@ -99,7 +83,6 @@ class ContactsController extends Controller
      */
     public function destroy($id)
     {
-        Contact::where('id', $id)->delete();
-        return redirect()->route('admin.contacts.index');
+        Feedback::where('id', $id)->delete();
     }
 }

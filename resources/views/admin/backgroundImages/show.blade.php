@@ -40,7 +40,7 @@
 
             <div class="row my-4 p-3 border">
                 <div class="col-2 border-right">Click To Download -></div>
-                <div class="col ml-3"><a href="{{asset($image->image_path)}}"  download>Download</a></div>
+                <div class="col ml-3"><a href="{{asset('storage/'.$image->image_path)}}"  download>Download</a></div>
             </div>
 
             <div class="row my-4 p-3 border">

@@ -45,10 +45,19 @@
 
                             <td>{{ $image->page_url }}</td>
 
-                            <td><a href="{{asset($image->image_path)}}" target=_blank> Open </a></td>
+                            <td><a href="{{asset('storage/'.$image->image_path)}}" target=_blank> Open </a></td>
 
-                            <td>
+                            <td class="d-flex">
                                 <a href="{{route('admin.backgroundImages.show', $image->id)}}" class="text-decoration-none"><span><i class="fa fa-eye"></i> View</span></a>
+
+                                <form method="POST" action="{{ route("admin.backgroundImages.destroy", $image->id) }}" class="deletePost">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-link">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span class="ml-2">Delete</span>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

@@ -7,56 +7,45 @@
     <div class="content-wrapper">
         <div class="content-header">
             <div class="container">
-               <div class="row my-4">
-                  <div class="col-sm-6">
-                     <h1 class="m-0">Abouts</h1>
-                  </div>
-
-                  <div class="col-sm-6">
-                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="{{route("admin.contacts.store")}}"><i class="fa fa-plus" aria-hidden="true"></i><span class="ml-2">Create</span></a></li>
-                     </ol>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <div class="container">
 
 
-            <form>
+               <form method="POST" action="{{route('admin.contacts.store')}}">
+                @csrf
 
-                <div class="form-group">
-                   <label for="language">Select Language (Select ka if there are no other translations for this text)</label>
-                    {{-- mgoni araa sachiro --}}
-                   <select class="form-control">
-                      <option>ka</option>
-                      <option>en</option>
-                      <option>ru</option>
-                   </select>
-                </div>
+                    <div class="row my-4">
 
-                <div class="form-group">
-                    <label for="language">Select Contact info type</label>
+                        <div class="col-sm-6">
+                        <h1 class="m-0">Abouts</h1>
+                        </div>
 
-                    <select class="form-control">
-                       <option>mail</option>
-                       <option>phone</option>
-                       <option>physical_address_ka</option>
-                       <option>physical_address_en</option>
-                       <option>physical_address_ru</option>
-                    </select>
-                 </div>
+                        <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <button type="submit" class="btn btn-primary">Create</button>
+                        </ol>
+                        </div>
+                    </div>
 
-                <div class="form-group">
-                   <label for="Content">Contact Info</label>
-                   <input class="form-control" type="text" placeholder="Default input">
-                </div>
+                    <div class="form-group">
+                        <label for="language">Select Contact info type</label>
+
+                        <select name="contact_name" class="form-control" required>
+                        <option value="mail">mail</option>
+                        <option value="phone">phone</option>
+                        <option value="physical_address_ka">physical_address_ka</option>
+                        <option value="physical_address_en">physical_address_en</option>
+                        <option value="physical_address_ru">physical_address_ru</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Content">Contact Info</label>
+                        <input class="form-control" type="text" name="contact_info" placeholder="Default input" required>
+                    </div>
 
              </form>
 
+            </div>
          </div>
-
 
     </div>
 

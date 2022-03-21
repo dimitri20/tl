@@ -30,7 +30,6 @@
                       <th scope="col">Image</th>
                       <th scope="col">Name (Georgian</th>
                       <th scope="col">Position (georgian)</th>
-
                    </tr>
                 </thead>
                 <tbody>
@@ -45,8 +44,17 @@
                             <th scope="row">{{ $team->position_ka }}</th>
 
 
-                            <td>
+                            <td class="d-flex">
                                 <a href="{{route('admin.team.show', $team->id)}}" class="text-decoration-none"><span><i class="fa fa-eye"></i> View</span></a>
+                                <a href="{{route('admin.team.edit', $team->id)}}" class="text-decoration-none ml-3"><span><i class="fas fa-edit"></i> Edit</span></a>
+                                <form method="POST" action="{{ route("admin.team.destroy", $team->id) }}" class="deletePost">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="btn btn-link">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <span class="ml-2">Delete</span>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
                     @endforeach

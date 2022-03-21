@@ -46,12 +46,11 @@ class TeamController extends Controller
             'about_en' => 'required',
             'name_ru' => 'required',
             'position_ru' => 'required',
-            'about_ru' => 'required',
-            'image' => 'required'
+            'about_ru' => 'required'
         ]);
 
         $image_name = uniqid().'_'.$request->file('image')->getClientOriginalName();
-        $request->image->move(storage_path('app/public/service_images/'), $image_name);
+        $request->image->move(storage_path('app/public/team_images/'), $image_name);
 
         Team::create([
             'name_ka' => $request->name_ka,
