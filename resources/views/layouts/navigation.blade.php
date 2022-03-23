@@ -134,16 +134,16 @@
       if($images->count() > 0){
 
         if(request()->is('services*')){
-        echo URL::to('/').'/'.BackgroundImage::where('page_url', 'services')->get()[0]['image_path'];
+        echo URL::to('/storage').'/'.BackgroundImage::where('page_url', 'services')->get()[0]['image_path'];
         }
         elseif(request()->is('team*')){
-          echo URL::to('/').'/'.BackgroundImage::where('page_url', 'team')->get()[0]['image_path'];
+          echo URL::to('/storage').'/'.BackgroundImage::where('page_url', 'team')->get()[0]['image_path'];
         }
         elseif(request()->is('blog*')){
-          echo URL::to('/').'/'.BackgroundImage::where('page_url', 'blog')->get()[0]['image_path'];
+          echo URL::to('/storage').'/'.BackgroundImage::where('page_url', 'blog')->get()[0]['image_path'];
         }
         else {
-          echo URL::to('/').'/'.$images[0]['image_path'];
+          echo URL::to('/storage').'/'.$images[0]['image_path'];
         }
       }
       else {

@@ -23,7 +23,7 @@
                     @for($j = 0; $j < 3; $j++)
                     <div class="col-sm person-container">
                         <img
-                            src="{{ asset('storage/'.substr($team[3*$i+$j]['image_path'], 1)) }}"
+                            src="{{ asset('storage/'.$team[3*$i+$j]['image_path']) }}"
                             alt="">
 
                         <a
@@ -46,13 +46,15 @@
                     @for($j = 0; $j < sizeof($team)%3; $j++)
 
                     <div class="col-sm person-container">
-                        <img
-                            src="{{ asset('storage/'.substr($team[3*(floor(sizeof($team)/3))+$j]['image_path'], 1)) }}"
-                            alt="">
+
 
                         <a
                             href=" {{ route('teammate', ['id' => $team[3*(floor(sizeof($team)/3))+$j]['id'], 'language' => app()->getLocale() ]) }}"
                             class="text-decoration-none">
+
+                            <img
+                            src="{{ asset('storage/'.$team[3*(floor(sizeof($team)/3))+$j]['image_path']) }}"
+                            alt="">
 
                             <h4
                                 class="text-center fw-bolder">

@@ -14,17 +14,27 @@
                 <h2 class="title-align-center">{{ $post['title'] }}</h2>
 
                 <div class="service-image d-flex justify-content-center">
-                    <img src="{{ asset('storage/'.substr($post['image_path'], 1)) }}" alt="" class="post-image ">
+                    <img src="{{ asset('storage/'.$post['image_path']) }}" alt="" class="post-image ">
                 </div>
 
                 <div style="margin-top: 20px;" class="text-main-formatting">
                     {!! $post['content'] !!}
                 </div>
 
-                <div style="margin-top: 20px;" class="text-main-formatting">
+                <div style="margin-top: 50px;" class="text-main-formatting">
+
+                    @if ($files)
+                        <h2 class="text-center">მიმაგრებული ფაილები</h2>
+                    @endif
+
                     @foreach ($files as $file)
-                        <p>
-                            <a href="{{ URL::to('/').'/storage/'.$file->path.$file->name.'.'.$file->extension }}" download>{{ $file->original_name }}</a>
+                        <p class="p-4">
+                            <a href="{{ URL::to('/').'/storage/'.$file->path.$file->name.'.'.$file->extension }}" download>
+
+                                <img src="{{ asset('images/document.png') }}" style="width: 30px;" alt="file">
+                                {{ $file->name }}
+
+                            </a>
                         </p>
                     @endforeach
                 </div>

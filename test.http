@@ -1,0 +1,3 @@
+GET http://127.0.0.1:8000/api/test HTTP/1.1
+Accept: application/json
+Authorization: : Bearer 30|jslGKmAepS6jMrFHeue5g1Q4fgBcQEytOb7ySYhs

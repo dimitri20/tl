@@ -88,7 +88,7 @@ class ServicesController extends Controller
             return view('services.show')
                 ->with('service_contents', $service_content_localized)
                 ->with('service_title', $service_name_localized)
-                ->with('service_image', substr($service_image, 1));
+                ->with('service_image', $service_image);
         }
 
     }

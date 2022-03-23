@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\FeedbackController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\MainPageController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Middleware\Localization;
@@ -26,18 +27,21 @@ use App\Models\Feedback;
 |
 */
 
-
+Route::redirect('/admin', '/admin/dashboard');
 
 Route::group(['prefix' => 'admin'], function(){
 
-
-    Route::get("/", function(){
-        return view('admin.index');
-    });
+    Auth::routes([
+        'register' => false,
+        'reset' => false,
+        'verify' => false
+    ]);
 
     Route::name("admin.")->group(function () {
+        Route::get('/dashboard', [HomeController::class, 'index'])->name('home');
         Route::resource('feedback', FeedbackController::class);
     });
+
 });
 
 
@@ -57,6 +61,9 @@ Route::group(['prefix' => 'admin/crud'], function(){
 });
 
 
+
+
+
 Route::get('/test', function(){
     return view('test');
 });
@@ -69,7 +76,8 @@ Route::redirect('/', '/ka');
 
 
 Route::group(['prefix' => '{language}'], function(){
-    Route::get('/', [HomeController::class, 'index'])->name('/')->middleware([Localization::class]);
+
+    Route::get('/', [MainPageController::class, 'index'])->name('/')->middleware([Localization::class]);
 
     Route::get('/about', [AboutUsController::class, 'index'])->name('about');
 
@@ -87,4 +95,5 @@ Route::group(['prefix' => '{language}'], function(){
 
 
 });
+
 

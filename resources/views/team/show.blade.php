@@ -11,7 +11,7 @@
                 <div class="back"><a href="{{ route('team', ['language' => app()->currentLocale()]) }}"><img src="{{ asset('storage/icons/arrow-back.svg') }}" alt="back"></a></div>
                 <div class="row">
                     <div class="col-sm person-container">
-                        <img src="{{ asset(substr($teammate['image_path'], 1)) }}" alt="">
+                        <img src="{{ asset('storage/'.$teammate['image_path']) }}" alt="">
                         <h4 class="text-center fw-bolder">{{ $teammate['name'] }}</h4>
                         <p class="text-center">{{ $teammate['position'] }}</p>
                     </div>

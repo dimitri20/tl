@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <title> TL - ADMIN </title>
     <link rel="shortcut icon" href="{{ asset('storage/globals/main-logo.png') }}" sizes="96x96" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
@@ -23,6 +24,13 @@
              </li>
              <li class="nav-item d-none d-sm-inline-block">
                 <a href="{{ route('admin.feedback.index') }}" class="nav-link">Feedbacks</a>
+             </li>
+
+             <li class="nav-item d-none d-sm-inline-block">
+                <form action="{{ route('logout') }}" method="post">
+                    @csrf
+                    <button type="submit" class="btn btn-outline-red">Log Out</button>
+                </form>
              </li>
           </ul>
        </nav>

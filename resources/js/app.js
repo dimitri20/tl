@@ -18,7 +18,7 @@ document.querySelector('#main-navbar-toggler').addEventListener('click', functio
 
 
 window.addEventListener('load', (event) => {
-    
+
     setTimeout(function(){
 
         document.querySelector('#appearing-text-1').style.opacity = '1';

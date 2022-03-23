@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\AuthKey;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +16,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::post('deleteFile', [\App\Http\Controllers\Admin\PostsController::class, 'deleteFile'])->name("deleteFile");
-Route::post('updatePostFileIds', [\App\Http\Controllers\Admin\PostsController::class, 'updatePostFileIds'])->name("updatePostFileIds");
-
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+
+
+
+// Route::get('test', [\App\Http\Controllers\Admin\PostsController::class, 'test']);
+
+Route::middleware('auth:sanctum')->group(function () {
+
+    Route::get('test', function () {
+        return response()->json("test");
+    });
+
+    Route::post('deleteFile', [\App\Http\Controllers\ApiController::class, 'deleteFile'])->name("deleteFile");
+    Route::post('updatePostFileIds', [\App\Http\Controllers\ApiController::class, 'updatePostFileIds'])->name("updatePostFileIds");
+
+
+});
+

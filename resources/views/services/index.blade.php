@@ -19,7 +19,7 @@
                     <div class="col-auto mb-4 mx-2 service-container">
                         <a href="{{ route('services.id', ['id'=>$service['id'], 'language' => app()->getLocale()]) }}">
                             <img
-                                src="{{ asset('storage/'.substr($service['image_path'],1)) }}"
+                                src="{{ asset('storage/'.$service['image_path']) }}"
                                 alt="">
                         </a>
 
